@@ -24,21 +24,21 @@ import {
 export default function AboutPage() {
   const leadership = [
     {
-      name: "Shri Subhash Soni",
+      name: "Shri Subhash Soni Ji",
       role: "Chairman & Founder",
       phone: "+91 94146 17887",
       desc: "Founded the house nearly 40 years ago, establishing the bedrock of pure gold and silver craftsmanship grounded in honesty, hard work, and unshakeable customer trust.",
       badge: "Founding Visionary"
     },
     {
-      name: "Shri Pawan Soni",
+      name: "Shri Pawan Soni Ji",
       role: "Wholesale & Bullion Operations",
       phone: "+91 94138 62371",
       desc: "Steering the wholesale vertical with expansive market presence, certified bullion sourcing, and B2B jeweller relationships built on transparency and integrity.",
       badge: "Wholesale Desk"
     },
     {
-      name: "Shri Punit Soni",
+      name: "Shri Punit Soni Ji",
       role: "Retail & Bespoke High Jewellery",
       phone: "+91 98879 96201",
       desc: "Leading the retail showroom and private bridal consultations, infusing modern aesthetics, 22K sculpted gold kadas, and exquisite bridal polki craftsmanship.",
@@ -128,7 +128,7 @@ export default function AboutPage() {
           </p>
 
           <p className="text-stone-300 text-xs sm:text-sm md:text-base max-w-2xl mx-auto font-light leading-relaxed mb-8">
-            Founded nearly 40 years ago by revered Shri Subhash Ji Soni, L.S Gems & Jewellers has flourished across three generations into Rajasthan's trusted bastion of BIS 916 hallmarked purity, wholesale excellence, and exquisite bespoke bridal artistry.
+            Founded nearly 40 years ago by revered Shri Subhash Soni Ji, L.S Gems & Jewellers has flourished across three generations into Rajasthan's trusted bastion of BIS 916 hallmarked purity, wholesale excellence, and exquisite bespoke bridal artistry.
           </p>
 
           <div className="w-20 h-[2px] bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto" />
@@ -155,11 +155,11 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 space-y-4 text-stone-700 text-xs sm:text-sm leading-relaxed font-normal">
               <p>
-                The glorious journey of <strong>L.S Gems & Jewellers</strong> commenced nearly <strong>40 years ago</strong>, when revered founder <strong>Shri Subhash Ji Soni</strong> envisioned a fine jewellery house built upon tireless perseverance, dedication, and uncompromising honesty. Laying the bedrock of pure gold and silver craftsmanship, he established a distinguished legacy whose greatest treasure has always been the enduring trust, warmth, and complete satisfaction of our patrons.
+                The glorious journey of <strong>L.S Gems & Jewellers</strong> commenced nearly <strong>40 years ago</strong>, when revered founder <strong>Shri Subhash Soni Ji</strong> envisioned a fine jewellery house built upon tireless perseverance, dedication, and uncompromising honesty. Laying the bedrock of pure gold and silver craftsmanship, he established a distinguished legacy whose greatest treasure has always been the enduring trust, warmth, and complete satisfaction of our patrons.
               </p>
 
               <p>
-                The responsibility of carrying forward this priceless heritage was gracefully embraced by his two sons, <strong>Shri Pawan Soni</strong> and <strong>Shri Punit Soni</strong>. Drawing upon their father's profound wisdom, family values, and commercial integrity, both brothers infused modern vision, contemporary designs, and youthful dynamism — elevating L.S Gems & Jewellers to ever-greater heights across wholesale and retail realms.
+                The responsibility of carrying forward this priceless heritage was gracefully embraced by his two sons, <strong>Shri Pawan Soni Ji</strong> and <strong>Shri Punit Soni Ji</strong>. Drawing upon their father's profound wisdom, family values, and commercial integrity, both brothers infused modern vision, contemporary designs, and youthful dynamism — elevating L.S Gems & Jewellers to ever-greater heights across wholesale and retail realms.
               </p>
 
               <div className="p-4 sm:p-5 rounded-2xl bg-[#faf2f4] border-l-4 border-[#801428] text-stone-800 space-y-2">

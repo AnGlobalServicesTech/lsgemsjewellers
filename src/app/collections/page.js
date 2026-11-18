@@ -247,33 +247,20 @@ export default function CollectionsPage() {
               return (
                 <div
                   key={product.id}
-                  className="group rounded-2xl bg-white border border-stone-200 hover:border-amber-400/60 overflow-hidden flex flex-col justify-between transition-all duration-500 hover:shadow-xl hover:-translate-y-1.5"
+                  className="group rounded-2xl bg-white border border-stone-200 hover:border-amber-400/60 overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
                 >
                   {/* Card Image Container */}
                   <div className="relative aspect-square overflow-hidden bg-stone-100">
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-cover object-center group-hover:scale-106 transition-transform duration-700 ease-out"
+                      className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-500 ease-out"
                     />
                     
                     {/* Royal Velvet Maroon Badge */}
                     <span className="absolute top-3 left-3 bg-gradient-to-r from-[#380c15] to-[#4d101d] text-amber-200 border border-amber-400/30 text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full shadow-md z-10">
                       {product.tag}
                     </span>
-
-                    {/* Wishlist Heart Button */}
-                    <button
-                      onClick={() => toggleWishlist(product)}
-                      className={`absolute top-3 right-3 p-2 rounded-full transition-all duration-300 cursor-pointer shadow-sm hover:scale-110 z-10 ${
-                        favorited
-                          ? "bg-[#801428] text-white shadow-md"
-                          : "bg-white/90 text-stone-600 hover:text-[#801428] hover:bg-white"
-                      }`}
-                      aria-label="Toggle wishlist"
-                    >
-                      <Heart className={`w-4 h-4 ${favorited ? "fill-white" : ""}`} />
-                    </button>
 
                     {/* Quick View Hover Action */}
                     <div className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-[#180307]/90 via-[#24060d]/60 to-transparent flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
@@ -336,16 +323,30 @@ export default function CollectionsPage() {
                       </p>
                     </div>
 
-                    <div className="pt-3 border-t border-stone-100 flex items-center justify-between">
+                    <div className="pt-3 border-t border-stone-100 flex items-center justify-between gap-2">
                       <span className="text-xs font-serif italic text-stone-600">
                         Price on Request
                       </span>
-                      <button
-                        onClick={() => setSelectedProduct(product)}
-                        className="px-4 py-1.5 bg-[#380c15] hover:bg-[#4d101d] text-amber-200 border border-amber-400/30 text-xs font-semibold rounded-lg transition-all duration-300 hover:scale-105 cursor-pointer shadow-xs"
-                      >
-                        Inquire
-                      </button>
+                      <div className="flex items-center gap-1.5">
+                        <button
+                          onClick={() => toggleWishlist(product)}
+                          className={`p-1.5 rounded-lg border transition-all duration-200 cursor-pointer shadow-xs ${
+                            favorited
+                              ? "bg-[#801428] text-white border-[#801428]"
+                              : "bg-stone-50 text-stone-500 hover:text-[#801428] hover:bg-[#faf2f4] border-stone-200 hover:border-[#801428]/30"
+                          }`}
+                          aria-label="Toggle wishlist"
+                          title={favorited ? "Remove from Wishlist" : "Save to Wishlist"}
+                        >
+                          <Heart className={`w-4 h-4 ${favorited ? "fill-white" : ""}`} />
+                        </button>
+                        <button
+                          onClick={() => setSelectedProduct(product)}
+                          className="px-4 py-1.5 bg-[#380c15] hover:bg-[#4d101d] text-amber-200 border border-amber-400/30 text-xs font-semibold rounded-lg transition-all duration-300 cursor-pointer shadow-xs"
+                        >
+                          Inquire
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -358,7 +359,7 @@ export default function CollectionsPage() {
         <div className="mt-20 p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#380c15] via-[#24060d] to-[#180307] border border-amber-500/35 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-80 h-80 bg-amber-500/10 rounded-full blur-[90px] pointer-events-none" />
           
-          <div className="flex items-center gap-5 relative z-10">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5 relative z-10">
             <span className="p-4 rounded-2xl bg-amber-400/15 border border-amber-400/30 text-amber-300 shrink-0 shadow-md">
               <ShieldCheck className="w-8 h-8 text-amber-300 animate-pulse" />
             </span>

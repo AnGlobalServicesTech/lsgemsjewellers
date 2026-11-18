@@ -87,7 +87,7 @@ export default function ProductModal() {
             <img
               src={gallery[activeImageIndex] || selectedProduct.image}
               alt={selectedProduct.name}
-              className="w-full h-full object-cover object-center transform transition-transform duration-700 group-hover:scale-105"
+              className="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-[1.02]"
             />
             
             {/* Tag badge */}
@@ -139,7 +139,7 @@ export default function ProductModal() {
         {/* Product Details Column */}
         <div className="md:w-1/2 p-6 md:p-8 overflow-y-auto flex flex-col justify-between">
           <div>
-            <div className="flex items-center justify-between text-xs text-amber-800 tracking-widest uppercase mb-1 font-semibold">
+            <div className="flex flex-wrap items-center justify-between gap-1.5 text-xs text-amber-800 tracking-widest uppercase mb-1 font-semibold">
               <span>{selectedProduct.category} • {selectedProduct.subCategory}</span>
               <span className="text-emerald-700 font-bold">{selectedProduct.certification}</span>
             </div>
@@ -148,7 +148,7 @@ export default function ProductModal() {
               {selectedProduct.name}
             </h2>
 
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
               <span className="text-xl sm:text-2xl font-serif font-bold text-[#801428]">
                 Price on Request
               </span>
@@ -162,7 +162,7 @@ export default function ProductModal() {
             </p>
 
             {/* Gemstone Specifications Grid */}
-            <div className="grid grid-cols-2 gap-2.5 p-3.5 rounded-2xl bg-[#faf9f6] border border-stone-200 mb-6 text-xs">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-3.5 rounded-2xl bg-[#faf9f6] border border-stone-200 mb-6 text-xs">
               <div>
                 <span className="text-stone-500 block text-[10px] uppercase tracking-wider mb-0.5 font-medium">Gemstone / Artistry</span>
                 <span className="font-semibold text-stone-900">{selectedProduct.gemstone}</span>
@@ -190,7 +190,7 @@ export default function ProductModal() {
               <label className="block text-xs font-semibold text-stone-700 uppercase tracking-wider mb-2">
                 Select Custom Precious Metal
               </label>
-              <div className="grid grid-cols-3 gap-2 text-xs">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
                 {["22K Yellow Gold", "18K Yellow Gold", "18K Rose Gold"].map((metal) => (
                   <button
                     key={metal}
@@ -280,7 +280,7 @@ export default function ProductModal() {
               </div>
             )}
 
-            <div className="flex items-center justify-between text-xs text-stone-600 pt-1">
+            <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-stone-600 pt-1">
               <Link
                 href="/contact"
                 onClick={() => setSelectedProduct(null)}

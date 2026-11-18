@@ -51,7 +51,7 @@ export const metadata = {
   },
   openGraph: {
     title: "L.S Gems & Jewellers | 40 Years of Heritage & Trust | Ajmer",
-    description: "40 years of glorious heritage founded by Shri Subhash Ji Soni. BIS 916 hallmarked pure 22K gold, designer kadas, and bespoke bridal heirlooms in Churi Bazar, Ajmer.",
+    description: "40 years of glorious heritage founded by Shri Subhash Soni Ji. BIS 916 hallmarked pure 22K gold, designer kadas, and bespoke bridal heirlooms in Churi Bazar, Ajmer.",
     url: "https://lsgemsjewellers.com",
     siteName: "L.S Gems & Jewellers",
     locale: "en_IN",
@@ -68,7 +68,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "L.S Gems & Jewellers | 40 Years of Heritage & Trust | Ajmer",
-    description: "40 years of glorious heritage founded by Shri Subhash Ji Soni. BIS 916 hallmarked pure 22K gold, designer kadas, and bespoke bridal heirlooms in Churi Bazar, Ajmer.",
+    description: "40 years of glorious heritage founded by Shri Subhash Soni Ji. BIS 916 hallmarked pure 22K gold, designer kadas, and bespoke bridal heirlooms in Churi Bazar, Ajmer.",
     images: ["/images/logo.jpg"],
   },
 };

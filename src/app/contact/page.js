@@ -201,8 +201,9 @@ export default function ContactPage() {
 
         {/* Main Section: Form & Direct Contact Info */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
-          {/* Left Column: Inquiry Form */}
-          <div className="lg:col-span-7 bg-white border border-stone-200/90 rounded-3xl p-6 sm:p-9 shadow-lg">
+          {/* Left Column: Inquiry Form + Trust Notice Below */}
+          <div className="lg:col-span-7 space-y-6">
+            <div className="bg-white border border-stone-200/90 rounded-3xl p-6 sm:p-9 shadow-lg">
             <div className="flex items-center gap-3 mb-6">
               <span className="p-2.5 rounded-2xl bg-amber-100 text-[#801428] border border-amber-200">
                 <Calendar className="w-5 h-5 text-[#801428]" />
@@ -364,6 +365,24 @@ export default function ContactPage() {
                 </button>
               </form>
             )}
+            </div>
+
+            {/* Pan-India Trust & No Franchise Notice (Placed Under Form) */}
+            <div className="bg-gradient-to-br from-[#380c15] via-[#2a070f] to-[#1c0409] text-amber-100 border border-amber-500/30 rounded-3xl p-6 sm:p-7 shadow-md space-y-3">
+              <div className="flex items-center gap-2 text-amber-300">
+                <ShieldCheck className="w-5 h-5 shrink-0" />
+                <h4 className="font-serif text-sm font-semibold uppercase tracking-wider">
+                  40 Years of Trust &bull; Direct Showroom
+                </h4>
+              </div>
+              <p className="text-xs text-stone-300 leading-relaxed font-light">
+                <strong>L.S Gems &amp; Jewellers (A Unit By Kulthiya)</strong> is an independent single-destination jewellery house located in Churi Bazar, Ajmer. <strong>We do not provide or authorize any franchise.</strong> Every creation is 100% BIS 916 hallmarked gold with 6-digit HUID verification, dispatched with fully insured pan-India delivery.
+              </p>
+              <div className="pt-2 border-t border-amber-900/40 flex items-center gap-2 text-[11px] text-amber-200 font-medium">
+                <Truck className="w-3.5 h-3.5 text-amber-300 shrink-0" />
+                <span>Insured Doorstep Delivery Across All Pincodes in India</span>
+              </div>
+            </div>
           </div>
 
           {/* Right Column: Direct Contact & Shop Details */}
@@ -432,7 +451,7 @@ export default function ContactPage() {
                 {/* Retail Desk */}
                 <div className="p-3.5 rounded-xl bg-stone-50 hover:bg-amber-50/50 border border-stone-200 transition-colors">
                   <div className="flex items-center justify-between mb-1">
-                    <span className="font-serif text-sm font-bold text-stone-900">Punit Soni</span>
+                    <span className="font-serif text-sm font-bold text-stone-900">Punit Soni Ji</span>
                     <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-[#801428] text-amber-100">
                       Retail Desk
                     </span>
@@ -464,7 +483,7 @@ export default function ContactPage() {
                 {/* Wholesale Desk */}
                 <div className="p-3.5 rounded-xl bg-stone-50 hover:bg-amber-50/50 border border-stone-200 transition-colors">
                   <div className="flex items-center justify-between mb-1">
-                    <span className="font-serif text-sm font-bold text-stone-900">Pawan Soni</span>
+                    <span className="font-serif text-sm font-bold text-stone-900">Pawan Soni Ji</span>
                     <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-700 text-white">
                       Wholesale Desk
                     </span>
@@ -484,7 +503,7 @@ export default function ContactPage() {
                 {/* Chairman Desk */}
                 <div className="p-3.5 rounded-xl bg-stone-50 hover:bg-amber-50/50 border border-stone-200 transition-colors">
                   <div className="flex items-center justify-between mb-1">
-                    <span className="font-serif text-sm font-bold text-stone-900">Subhash Soni</span>
+                    <span className="font-serif text-sm font-bold text-stone-900">Subhash Soni Ji</span>
                     <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-stone-800 text-amber-200">
                       Chairman
                     </span>
@@ -500,23 +519,6 @@ export default function ContactPage() {
                     <span>+91 94146 17887</span>
                   </a>
                 </div>
-              </div>
-            </div>
-
-            {/* Pan-India Trust & No Franchise Notice */}
-            <div className="bg-gradient-to-br from-[#380c15] via-[#2a070f] to-[#1c0409] text-amber-100 border border-amber-500/30 rounded-3xl p-6 shadow-md space-y-3">
-              <div className="flex items-center gap-2 text-amber-300">
-                <ShieldCheck className="w-5 h-5 shrink-0" />
-                <h4 className="font-serif text-sm font-semibold uppercase tracking-wider">
-                  40 Years of Trust &bull; Direct Showroom
-                </h4>
-              </div>
-              <p className="text-xs text-stone-300 leading-relaxed font-light">
-                <strong>L.S Gems &amp; Jewellers (A Unit By Kulthiya)</strong> is an independent single-destination jewellery house located in Churi Bazar, Ajmer. <strong>We do not provide or authorize any franchise.</strong> Every creation is 100% BIS 916 hallmarked gold with 6-digit HUID verification, dispatched with fully insured pan-India delivery.
-              </p>
-              <div className="pt-2 border-t border-amber-900/40 flex items-center gap-2 text-[11px] text-amber-200 font-medium">
-                <Truck className="w-3.5 h-3.5 text-amber-300 shrink-0" />
-                <span>Insured Doorstep Delivery Across All Pincodes in India</span>
               </div>
             </div>
           </div>

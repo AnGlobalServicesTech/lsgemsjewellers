@@ -106,7 +106,7 @@ export default function Hero() {
   return (
     <div className="w-full flex flex-col min-h-screen bg-[#f6e6d3] text-stone-900 overflow-x-hidden">
       {/* 1. Hero Carousel Section */}
-      <section className="relative w-full min-h-[660px] sm:h-[90vh] sm:min-h-[640px] sm:max-h-[860px] flex items-center overflow-hidden bg-[#f6e6d3]">
+      <section className="relative w-full min-h-[700px] sm:h-[90vh] sm:min-h-[640px] sm:max-h-[860px] flex items-center overflow-hidden bg-[#f6e6d3]">
         {HERO_SLIDES.map((slide, index) => {
           const isActive = index === currentSlide;
           return (
@@ -127,22 +127,22 @@ export default function Hero() {
                 />
               </div>
 
-              {/* Ambient Left Scrim Overlay for Crystal-Clear Text Contrast */}
+              {/* Ambient Scrim Overlay: Even frosted veil on mobile for full readability, directional left gradient on desktop */}
               <div 
                 className={`absolute inset-0 pointer-events-none z-10 w-full sm:w-[70%] lg:w-[58%] transition-opacity duration-700 ${
                   slide.isDark 
-                    ? "bg-gradient-to-r from-[#12070a]/95 via-[#12070a]/75 to-transparent" 
-                    : "bg-gradient-to-r from-[#faf3eb]/95 via-[#faf3eb]/70 to-transparent"
+                    ? "bg-[#12070a]/80 backdrop-blur-[2px] sm:bg-transparent sm:backdrop-blur-none sm:bg-gradient-to-r sm:from-[#12070a]/95 sm:via-[#12070a]/75 sm:to-transparent" 
+                    : "bg-[#faf3eb]/85 backdrop-blur-[2px] sm:bg-transparent sm:backdrop-blur-none sm:bg-gradient-to-r sm:from-[#faf3eb]/95 sm:via-[#faf3eb]/70 sm:to-transparent"
                 }`} 
               />
 
               {/* Left Content - Rich Contextual Showcase */}
               <div className="relative z-20 max-w-7xl mx-auto h-full flex items-center px-4 sm:px-6 lg:px-8">
-                <div className="max-w-md sm:max-w-lg lg:max-w-[480px] py-10 sm:py-12 lg:py-0">
+                <div className="max-w-md sm:max-w-lg lg:max-w-[480px] pt-8 pb-20 sm:py-12 lg:py-0">
                   <div className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] tracking-[0.22em] uppercase font-semibold mb-4 shadow-xs transition-colors ${
                     slide.isDark 
                       ? "bg-amber-400/15 border border-amber-400/40 text-amber-200" 
-                      : "bg-white/90 border border-stone-200 text-[#801428]"
+                      : "bg-white/95 border border-stone-200 text-[#801428]"
                   }`}>
                     <Sparkles className={`w-3.5 h-3.5 ${slide.isDark ? "text-amber-300" : "text-[#801428]"} animate-sparkle`} />
                     <span>{slide.tag}</span>
@@ -157,8 +157,8 @@ export default function Hero() {
                     </span>
                   </h1>
 
-                  <p className={`text-xs sm:text-[14px] font-normal leading-relaxed max-w-md mb-4 transition-colors ${
-                    slide.isDark ? "text-stone-200 drop-shadow-[0_1px_6px_rgba(0,0,0,0.7)] font-light" : "text-stone-800 font-light"
+                  <p className={`text-xs sm:text-[14px] leading-relaxed max-w-md mb-4 transition-colors ${
+                    slide.isDark ? "text-stone-200 drop-shadow-[0_1px_6px_rgba(0,0,0,0.7)] font-light" : "text-stone-900 sm:text-stone-800 font-normal sm:font-light"
                   }`}>
                     {slide.description}
                   </p>
@@ -172,7 +172,7 @@ export default function Hero() {
                           className={`flex items-center gap-2 py-1 px-2.5 rounded-lg transition-colors ${
                             slide.isDark 
                               ? "text-stone-200 bg-black/40 border border-white/10 shadow-xs" 
-                              : "text-stone-800 bg-white/75 border border-stone-200/90 shadow-2xs"
+                              : "text-stone-900 bg-white/90 sm:bg-white/75 border border-stone-200/90 shadow-2xs"
                           }`}
                         >
                           <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${slide.isDark ? "bg-amber-400" : "bg-[#801428]"}`} />
@@ -185,7 +185,7 @@ export default function Hero() {
                   {/* Mini Specification Strip */}
                   {slide.specs && (
                     <div className={`mb-6 pt-2.5 border-t flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] max-w-md ${
-                      slide.isDark ? "border-amber-400/20 text-stone-300" : "border-stone-300/80 text-stone-700"
+                      slide.isDark ? "border-amber-400/20 text-stone-300" : "border-stone-400/60 sm:border-stone-300/80 text-stone-900 sm:text-stone-700"
                     }`}>
                       <div>
                         <span className={slide.isDark ? "text-amber-300 uppercase tracking-wider text-[9.5px] font-bold" : "text-[#801428] uppercase tracking-wider text-[9.5px] font-bold"}>
@@ -272,7 +272,7 @@ export default function Hero() {
             <span className="text-amber-500/40">✦</span>
             <span className="flex items-center gap-2 text-stone-200"><ShieldCheck className="w-3.5 h-3.5 text-amber-300" /> 6-Digit HUID &amp; Live German XRF Gold Assay</span>
             <span className="text-amber-500/40">✦</span>
-            <span className="flex items-center gap-2 text-amber-200"><Award className="w-3.5 h-3.5 text-amber-400" /> 40 Years of Heritage &bull; Est. by Shri Subhash Ji Soni</span>
+            <span className="flex items-center gap-2 text-amber-200"><Award className="w-3.5 h-3.5 text-amber-400" /> 40 Years of Heritage &bull; Est. by Shri Subhash Soni Ji</span>
             <span className="text-amber-500/40">✦</span>
             <span className="flex items-center gap-2 text-stone-200"><ShieldCheck className="w-3.5 h-3.5 text-amber-300" /> Transparent Gold Rate & Old Gold Exchange</span>
             <span className="text-amber-500/40">✦</span>
@@ -286,7 +286,7 @@ export default function Hero() {
             <span className="text-amber-500/40">✦</span>
             <span className="flex items-center gap-2 text-stone-200"><ShieldCheck className="w-3.5 h-3.5 text-amber-300" /> 6-Digit HUID &amp; Live German XRF Gold Assay</span>
             <span className="text-amber-500/40">✦</span>
-            <span className="flex items-center gap-2 text-amber-200"><Award className="w-3.5 h-3.5 text-amber-400" /> 40 Years of Heritage &bull; Est. by Shri Subhash Ji Soni</span>
+            <span className="flex items-center gap-2 text-amber-200"><Award className="w-3.5 h-3.5 text-amber-400" /> 40 Years of Heritage &bull; Est. by Shri Subhash Soni Ji</span>
             <span className="text-amber-500/40">✦</span>
             <span className="flex items-center gap-2 text-stone-200"><ShieldCheck className="w-3.5 h-3.5 text-amber-300" /> Transparent Gold Rate & Old Gold Exchange</span>
             <span className="text-amber-500/40">✦</span>
@@ -316,13 +316,13 @@ export default function Hero() {
               <Link
                 key={category.id}
                 href={category.href || `/collections?category=${encodeURIComponent(category.name)}`}
-                className="group relative rounded-2xl overflow-hidden bg-white border border-stone-200 hover:border-[#801428]/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-1.5 luxury-card-hover"
+                className="group relative rounded-2xl overflow-hidden bg-white border border-stone-200 hover:border-[#801428]/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 luxury-card-hover"
               >
                 <div className="aspect-[4/5] relative overflow-hidden bg-stone-100">
                   <img
                     src={category.image}
                     alt={category.name}
-                    className="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-700"
+                    className="w-full h-full object-cover object-center group-hover:scale-[1.015] transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#160408]/95 via-[#1c0409]/60 via-40% to-transparent to-75% pointer-events-none" />
                 </div>
@@ -374,11 +374,11 @@ export default function Hero() {
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 lg:gap-5 items-stretch">
             {/* Left Main Featured Card */}
-            <div className="md:col-span-7 lg:col-span-8 relative rounded-3xl overflow-hidden group border border-amber-900/40 hover:border-amber-400/70 transition-all duration-700 shadow-lg hover:shadow-2xl h-[360px] sm:h-[440px] lg:h-[480px] bg-[#140307] flex items-center justify-center luxury-card-hover">
+            <div className="md:col-span-7 lg:col-span-8 relative rounded-3xl overflow-hidden group border border-amber-900/40 hover:border-amber-400/70 transition-all duration-500 shadow-lg hover:shadow-xl aspect-[16/10] sm:aspect-auto sm:h-[420px] lg:h-[480px] bg-[#140307] flex items-center justify-center luxury-card-hover">
               <img
                 src={EDITORIAL_GALLERY[0].image}
                 alt={EDITORIAL_GALLERY[0].title}
-                className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-700 ease-out"
+                className="w-full h-full object-cover object-center group-hover:scale-[1.015] transition-transform duration-500 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#140307]/95 via-[#1c0409]/40 via-30% to-transparent to-60% pointer-events-none" />
               <div className="absolute top-4 left-4 z-10">
@@ -401,12 +401,12 @@ export default function Hero() {
               {EDITORIAL_GALLERY.slice(1, 3).map((item) => (
                 <div
                   key={item.id}
-                  className="h-[210px] md:h-auto md:flex-1 relative rounded-2xl overflow-hidden group border border-amber-900/40 hover:border-amber-400/70 transition-all duration-700 shadow-md hover:shadow-xl bg-[#140307] flex items-center justify-center luxury-card-hover"
+                  className="aspect-[16/9] md:aspect-auto md:flex-1 relative rounded-2xl overflow-hidden group border border-amber-900/40 hover:border-amber-400/70 transition-all duration-500 shadow-md hover:shadow-lg bg-[#140307] flex items-center justify-center luxury-card-hover"
                 >
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover object-center group-hover:scale-[1.015] transition-transform duration-500 ease-out"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#140307]/95 via-[#1c0409]/40 via-30% to-transparent to-60% pointer-events-none" />
                   <div className="absolute top-3 left-3 z-10">
@@ -467,31 +467,18 @@ export default function Hero() {
               return (
                 <div
                   key={product.id}
-                  className="group rounded-2xl bg-white border border-stone-200/80 hover:border-[#801428]/40 overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1 luxury-card-hover"
+                  className="group rounded-2xl bg-white border border-stone-200/80 hover:border-[#801428]/40 overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 luxury-card-hover"
                 >
                   {/* Card Image Container */}
-                  <div className="relative aspect-square max-h-[260px] overflow-hidden bg-stone-100 flex items-center justify-center">
+                  <div className="relative aspect-square overflow-hidden bg-stone-100 flex items-center justify-center">
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-cover object-center group-hover:scale-106 transition-transform duration-500"
+                      className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-500"
                     />
                     <span className="absolute top-2.5 left-2.5 bg-gradient-to-r from-[#380c15] via-[#52111f] to-[#380c15] text-amber-200 border border-amber-400/20 text-[9.5px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full shadow">
                       {product.tag}
                     </span>
-
-                    {/* Wishlist Button */}
-                    <button
-                      onClick={() => toggleWishlist(product)}
-                      className={`absolute top-2.5 right-2.5 p-1.5 rounded-full transition-all cursor-pointer shadow-sm ${
-                        favorited
-                          ? "bg-[#801428] text-white shadow-md"
-                          : "bg-white/90 text-stone-600 hover:text-[#801428] hover:bg-white"
-                      }`}
-                      aria-label="Toggle wishlist"
-                    >
-                      <Heart className={`w-3.5 h-3.5 ${favorited ? "fill-white" : ""}`} />
-                    </button>
 
                     {/* Quick View Hover Overlay */}
                     <div className="absolute inset-x-0 bottom-0 p-2.5 bg-gradient-to-t from-stone-900/85 via-stone-900/40 to-transparent flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -536,16 +523,30 @@ export default function Hero() {
                       </p>
                     </div>
 
-                    <div className="pt-2.5 border-t border-stone-100 flex items-center justify-between">
+                    <div className="pt-2.5 border-t border-stone-100 flex items-center justify-between gap-2">
                       <span className="text-xs font-serif italic text-stone-600">
                         Price on Request
                       </span>
-                      <button
-                        onClick={() => setSelectedProduct(product)}
-                        className="px-3.5 py-1.5 bg-[#faf2f4] hover:bg-[#380c15] hover:text-amber-100 text-[#801428] text-xs font-semibold rounded-lg border border-[#801428]/20 transition-all cursor-pointer shadow-xs"
-                      >
-                        Inquire
-                      </button>
+                      <div className="flex items-center gap-1.5">
+                        <button
+                          onClick={() => toggleWishlist(product)}
+                          className={`p-1.5 rounded-lg border transition-all cursor-pointer shadow-xs ${
+                            favorited
+                              ? "bg-[#801428] text-white border-[#801428]"
+                              : "bg-stone-50 text-stone-500 hover:text-[#801428] hover:bg-[#faf2f4] border-stone-200 hover:border-[#801428]/30"
+                          }`}
+                          aria-label="Toggle wishlist"
+                          title={favorited ? "Remove from Wishlist" : "Save to Wishlist"}
+                        >
+                          <Heart className={`w-3.5 h-3.5 ${favorited ? "fill-white" : ""}`} />
+                        </button>
+                        <button
+                          onClick={() => setSelectedProduct(product)}
+                          className="px-3.5 py-1.5 bg-[#faf2f4] hover:bg-[#380c15] hover:text-amber-100 text-[#801428] text-xs font-semibold rounded-lg border border-[#801428]/20 transition-all cursor-pointer shadow-xs"
+                        >
+                          Inquire
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -612,7 +613,7 @@ export default function Hero() {
                 </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-amber-900/30 text-[11px] text-stone-300 flex items-center gap-4">
+              <div className="mt-6 pt-4 border-t border-amber-900/30 text-[11px] text-stone-300 flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
                 <span>Tone: <strong className="text-amber-100">{activeGold.tone}</strong></span>
                 <span>Assay: <strong className="text-amber-100">XRF Verified</strong></span>
               </div>
@@ -624,14 +625,14 @@ export default function Hero() {
                 <label className="block text-xs font-bold text-amber-100 uppercase tracking-wider mb-3">
                   Select Gold Karat &amp; Fineness
                 </label>
-                <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
+                <div className="flex flex-wrap sm:grid sm:grid-cols-5 gap-2">
                   {goldKaratOptions.map((opt) => (
                     <button
                       key={opt.karat}
                       onClick={() => setSelectedKarat(opt.karat)}
-                      className={`p-3 rounded-xl border text-center transition-all cursor-pointer ${
+                      className={`flex-1 min-w-[92px] sm:min-w-0 p-3 rounded-xl border text-center transition-all cursor-pointer ${
                         selectedKarat === opt.karat
-                          ? "border-amber-400 bg-[#4a101d] text-amber-100 font-bold shadow-md scale-105"
+                          ? "border-amber-400 bg-[#4a101d] text-amber-100 font-bold shadow-md sm:scale-105"
                           : "border-amber-900/30 bg-[#24060d]/60 text-stone-300 hover:border-amber-600/50 hover:text-white"
                       }`}
                     >
@@ -765,7 +766,7 @@ export default function Hero() {
                     </span>
                     <div>
                       <p className="text-xs font-semibold text-white">1-on-1 Viewing</p>
-                      <p className="text-[10px] text-stone-400">Retail Desk (Punit Soni)</p>
+                      <p className="text-[10px] text-stone-400">Retail Desk (Punit Soni Ji)</p>
                     </div>
                   </div>
 
@@ -785,7 +786,7 @@ export default function Hero() {
                     </span>
                     <div>
                       <p className="text-xs font-semibold text-white">Wholesale Bullion</p>
-                      <p className="text-[10px] text-stone-400">Wholesale Desk (Pawan Soni)</p>
+                      <p className="text-[10px] text-stone-400">Wholesale Desk (Pawan Soni Ji)</p>
                     </div>
                   </div>
                 </div>
@@ -817,7 +818,7 @@ export default function Hero() {
                   <img
                     src="/images/products/necklace-mayur-grand-trousseau-combo.jpg"
                     alt="L.S Gems & Jewellers Showroom Ajmer"
-                    className="w-full h-full object-contain p-2 transform transition-transform duration-700 hover:scale-105"
+                    className="w-full h-full object-contain p-2 transform transition-transform duration-500 hover:scale-[1.02]"
                   />
                   
                   {/* Floating Status Badge */}

@@ -75,9 +75,9 @@ export default function Footer() {
 
       {/* Main Footer Directory */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 xl:gap-10">
           {/* Brand Intro & 40-Year Heritage */}
-          <div className="lg:col-span-2 space-y-4">
+          <div className="lg:col-span-4 space-y-4">
             <div>
               <div className="flex items-center gap-3">
                 <img 
@@ -97,7 +97,7 @@ export default function Footer() {
             </div>
 
             <p className="text-xs sm:text-sm text-stone-300/90 leading-relaxed max-w-sm font-light">
-              For four decades, L.S Gems & Jewellers has stood as an authentic symbol of trust, purity, and master craftsmanship. Founded by Shri Subhash Ji Soni and carried forward across three generations, we craft BIS 916 hallmarked heirlooms that celebrate human milestones.
+              For four decades, L.S Gems & Jewellers has stood as an authentic symbol of trust, purity, and master craftsmanship. Founded by Shri Subhash Soni Ji and carried forward across three generations, we craft BIS 916 hallmarked heirlooms that celebrate human milestones.
             </p>
 
             <div className="pt-2 text-xs text-amber-200/90 font-serif italic">
@@ -106,7 +106,7 @@ export default function Footer() {
           </div>
 
           {/* Column: High Jewellery */}
-          <div>
+          <div className="lg:col-span-2">
             <h5 className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-300/90 mb-4 font-sans">
               Collections
             </h5>
@@ -145,7 +145,7 @@ export default function Footer() {
           </div>
 
           {/* Column: Heritage & House */}
-          <div>
+          <div className="lg:col-span-2">
             <h5 className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-300/90 mb-4 font-sans">
               The House
             </h5>
@@ -157,7 +157,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/about" className="text-stone-300 hover:text-amber-200 font-light tracking-wide transition-colors py-0.5 inline-block">
-                  Shri Subhash Ji Soni Legacy
+                  Shri Subhash Soni Ji Legacy
                 </Link>
               </li>
               <li>
@@ -179,7 +179,7 @@ export default function Footer() {
           </div>
 
           {/* Column: Showroom & Direct Contact Desks */}
-          <div>
+          <div className="lg:col-span-4">
             <h5 className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-300/90 mb-4 font-sans">
               Showroom & Desks
             </h5>
@@ -197,22 +197,22 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="space-y-1.5 pt-1 border-t border-amber-900/30">
-                <div className="flex items-center justify-between text-[11px]">
-                  <span className="text-stone-400">Retail (Punit Soni):</span>
-                  <a href="tel:+919887996201" className="text-amber-300 hover:underline font-medium">
+              <div className="space-y-1.5 pt-2 border-t border-amber-900/30">
+                <div className="flex items-center justify-between gap-2 text-[10.5px] sm:text-xs">
+                  <span className="text-stone-400 whitespace-nowrap">Retail (Punit Soni Ji):</span>
+                  <a href="tel:+919887996201" className="text-amber-300 hover:underline font-medium whitespace-nowrap">
                     +91 98879 96201
                   </a>
                 </div>
-                <div className="flex items-center justify-between text-[11px]">
-                  <span className="text-stone-400">Wholesale (Pawan Soni):</span>
-                  <a href="tel:+919413862371" className="text-amber-300 hover:underline font-medium">
+                <div className="flex items-center justify-between gap-2 text-[10.5px] sm:text-xs">
+                  <span className="text-stone-400 whitespace-nowrap">Wholesale (Pawan Soni Ji):</span>
+                  <a href="tel:+919413862371" className="text-amber-300 hover:underline font-medium whitespace-nowrap">
                     +91 94138 62371
                   </a>
                 </div>
-                <div className="flex items-center justify-between text-[11px]">
-                  <span className="text-stone-400">Chairman (Subhash Soni):</span>
-                  <a href="tel:+919414617887" className="text-amber-300 hover:underline font-medium">
+                <div className="flex items-center justify-between gap-2 text-[10.5px] sm:text-xs">
+                  <span className="text-stone-400 whitespace-nowrap">Chairman (Subhash Soni Ji):</span>
+                  <a href="tel:+919414617887" className="text-amber-300 hover:underline font-medium whitespace-nowrap">
                     +91 94146 17887
                   </a>
                 </div>

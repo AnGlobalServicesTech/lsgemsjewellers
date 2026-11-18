@@ -157,7 +157,7 @@
 }
 
 .luxury-image-wrapper:hover img {
-  transform: scale(1.08);
+  transform: scale(1.02);
 }
 
 /* ====== ADVANCED LUXURY ANIMATIONS ====== */
@@ -229,11 +229,11 @@
   animation: goldGleam 7s ease-in-out infinite;
 }
 
-/* 4. Luxury Card Hover with Light Sweep & Elevation */
+/* 4. Luxury Card Hover with Subtle Sheen & Gentle Elevation */
 .luxury-card-hover {
   position: relative;
   overflow: hidden;
-  transition: all 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
 .luxury-card-hover::before {
@@ -245,12 +245,12 @@
   height: 220%;
   background: linear-gradient(
     45deg,
-    transparent 43%,
-    rgba(255, 255, 255, 0.35) 50%,
-    transparent 57%
+    transparent 45%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 55%
   );
   transform: translateX(-120%);
-  transition: transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   pointer-events: none;
   z-index: 15;
 }
@@ -260,8 +260,8 @@
 }
 
 .luxury-card-hover:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 18px 40px -10px rgba(128, 20, 40, 0.15), 0 0 0 1px rgba(180, 131, 22, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -8px rgba(128, 20, 40, 0.1), 0 0 0 1px rgba(180, 131, 22, 0.22);
 }
 
 /* 5. Luxury Button with Gleam Sweep */
