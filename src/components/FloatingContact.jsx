@@ -19,11 +19,10 @@ export default function FloatingContact() {
   }
 
   return (
-    <aside 
+    <aside
       aria-label="Direct Shop Contacts"
       className="fixed bottom-4 right-3.5 sm:bottom-6 sm:right-6 z-40 flex flex-col items-center gap-2.5 sm:gap-3 print:hidden pointer-events-auto"
     >
-      {/* WhatsApp Floating Button */}
       <a
         href={whatsappUrl}
         target="_blank"
@@ -33,14 +32,13 @@ export default function FloatingContact() {
         title="Chat on WhatsApp (Retail Desk: +91 98879 96201)"
       >
         <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-emerald-500 animate-ping opacity-75" />
-        <img 
-          src="/images/whatsapp-icon.png" 
-          alt="WhatsApp Chat" 
-          className="w-full h-full object-contain select-none pointer-events-none drop-shadow-xs" 
+        <img
+          src="/images/whatsapp-icon.png"
+          alt="WhatsApp Chat"
+          className="w-full h-full object-contain select-none pointer-events-none drop-shadow-xs"
         />
       </a>
 
-      {/* Call Us Floating Button */}
       <a
         href={`tel:${phoneNumber}`}
         className="group w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-gradient-to-br from-[#380c15] via-[#4d101d] to-[#25050c] hover:from-[#4d101d] hover:to-[#1f0309] text-amber-300 border border-amber-400/50 flex items-center justify-center shadow-[0_8px_20px_rgba(56,12,21,0.5)] hover:shadow-[0_10px_25px_rgba(56,12,21,0.7)] transition-all duration-300 hover:scale-105 cursor-pointer animate-pulse-ring-maroon"

@@ -27,7 +27,6 @@
   }
 }
 
-/* Animations */
 @keyframes goldShimmer {
   0% {
     background-position: -200% 0;
@@ -76,7 +75,6 @@
   animation: pulseGlow 8s ease-in-out infinite;
 }
 
-/* Luxury Light Theme Gold Utilities */
 .text-gold-gradient {
   background: linear-gradient(135deg, #a16207 0%, #b45309 40%, #ca8a04 70%, #854d0e 100%);
   -webkit-background-clip: text;
@@ -146,7 +144,6 @@
   box-shadow: 0 15px 35px -5px rgba(180, 131, 22, 0.12);
 }
 
-/* Image Zoom & Vignette Container */
 .luxury-image-wrapper {
   position: relative;
   overflow: hidden;
@@ -160,9 +157,6 @@
   transform: scale(1.02);
 }
 
-/* ====== ADVANCED LUXURY ANIMATIONS ====== */
-
-/* 1. Sparkle Twinkle for Diamonds & Gems */
 @keyframes sparkleTwinkle {
   0%, 100% {
     transform: scale(0.85) rotate(0deg);
@@ -184,7 +178,6 @@
   animation: sparkleTwinkle 3.5s ease-in-out 1.2s infinite;
 }
 
-/* 2. Infinite Smooth Luxury Marquee */
 @keyframes marqueeScroll {
   0% {
     transform: translateX(0%);
@@ -204,7 +197,6 @@
   animation-play-state: paused;
 }
 
-/* 3. Gold Metallic Gleam Text */
 @keyframes goldGleam {
   0% {
     background-position: -200% 0;
@@ -229,7 +221,6 @@
   animation: goldGleam 7s ease-in-out infinite;
 }
 
-/* 4. Luxury Card Hover with Subtle Sheen & Gentle Elevation */
 .luxury-card-hover {
   position: relative;
   overflow: hidden;
@@ -264,7 +255,6 @@
   box-shadow: 0 10px 24px -8px rgba(128, 20, 40, 0.1), 0 0 0 1px rgba(180, 131, 22, 0.22);
 }
 
-/* 5. Luxury Button with Gleam Sweep */
 .gold-gleam-btn {
   position: relative;
   overflow: hidden;
@@ -298,7 +288,6 @@
   box-shadow: 0 12px 28px -5px rgba(56, 12, 21, 0.45);
 }
 
-/* 6. Pulse Rings for Floating Contacts */
 @keyframes pulseRingGreen {
   0% {
     transform: scale(0.95);
@@ -337,7 +326,6 @@
   animation: pulseRingMaroon 2.6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* 7. Slow Atmospheric Spin for Diamond Rays */
 @keyframes slowSpin {
   from {
     transform: rotate(0deg);
@@ -351,7 +339,6 @@
   animation: slowSpin 28s linear infinite;
 }
 
-/* 8. Breathing Ambient Aura */
 @keyframes breathingGlow {
   0%, 100% {
     opacity: 0.25;
@@ -367,7 +354,6 @@
   animation: breathingGlow 9s ease-in-out infinite;
 }
 
-/* Custom Scrollbar for Light Theme */
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -381,4 +367,3 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #b48316;
 }
-

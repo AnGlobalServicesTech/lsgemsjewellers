@@ -2,20 +2,19 @@
 
 import React from "react";
 import Link from "next/link";
-import { 
-  ShieldCheck, 
-  Lock, 
-  EyeOff, 
-  Database, 
-  UserCheck, 
-  Mail, 
-  Phone 
+import {
+  ShieldCheck,
+  Lock,
+  EyeOff,
+  Database,
+  UserCheck,
+  Mail,
+  Phone
 } from "lucide-react";
 
 export default function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen bg-[#f6e6d3] text-stone-900 pb-20">
-      {/* Header Banner */}
       <section className="relative bg-gradient-to-br from-[#380c15] via-[#24060d] to-[#180307] text-white pt-14 pb-16 sm:py-20 border-b border-amber-500/25 overflow-hidden">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-0 left-10 w-96 h-96 bg-rose-950/40 rounded-full blur-[120px] pointer-events-none" />
@@ -37,11 +36,9 @@ export default function PrivacyPolicyPage() {
         </div>
       </section>
 
-      {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-14">
         <div className="bg-white border border-stone-200/90 rounded-3xl p-6 sm:p-10 shadow-sm space-y-10">
-          
-          {/* Section 1 */}
+
           <div className="space-y-3 pb-8 border-b border-stone-100">
             <div className="flex items-center gap-3">
               <span className="p-2.5 rounded-xl bg-amber-100 text-[#801428]">
@@ -61,7 +58,6 @@ export default function PrivacyPolicyPage() {
             </ul>
           </div>
 
-          {/* Section 2 */}
           <div className="space-y-3 pb-8 border-b border-stone-100">
             <div className="flex items-center gap-3">
               <span className="p-2.5 rounded-xl bg-amber-100 text-[#801428]">
@@ -83,7 +79,6 @@ export default function PrivacyPolicyPage() {
             </ul>
           </div>
 
-          {/* Section 3 */}
           <div className="space-y-3 pb-8 border-b border-stone-100">
             <div className="flex items-center gap-3">
               <span className="p-2.5 rounded-xl bg-amber-100 text-[#801428]">
@@ -105,7 +100,6 @@ export default function PrivacyPolicyPage() {
             </ul>
           </div>
 
-          {/* Section 4 */}
           <div className="space-y-3 pb-8 border-b border-stone-100">
             <div className="flex items-center gap-3">
               <span className="p-2.5 rounded-xl bg-amber-100 text-[#801428]">
@@ -125,7 +119,6 @@ export default function PrivacyPolicyPage() {
             </ul>
           </div>
 
-          {/* Section 5 */}
           <div className="space-y-3 pb-8 border-b border-stone-100">
             <div className="flex items-center gap-3">
               <span className="p-2.5 rounded-xl bg-amber-100 text-[#801428]">
@@ -145,7 +138,6 @@ export default function PrivacyPolicyPage() {
             </ul>
           </div>
 
-          {/* Contact Box */}
           <div className="p-6 rounded-2xl bg-stone-50 border border-stone-200 space-y-3">
             <h3 className="font-serif text-base font-bold text-stone-900">
               Patron Privacy Assistance
@@ -154,8 +146,8 @@ export default function PrivacyPolicyPage() {
               For any questions regarding your data, privacy protection, or appointment records, please reach out directly:
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-xs">
-              <a 
-                href="tel:+919887996201" 
+              <a
+                href="tel:+919887996201"
                 className="flex items-center gap-2 text-[#801428] font-semibold hover:underline"
               >
                 <Phone className="w-4 h-4" />

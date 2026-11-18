@@ -2,25 +2,23 @@
 
 import React from "react";
 import Link from "next/link";
-import { 
-  ShieldCheck, 
-  Award, 
-  Truck, 
-  RefreshCw, 
-  Mail, 
-  Phone, 
-  MapPin 
+import {
+  ShieldCheck,
+  Award,
+  Truck,
+  RefreshCw,
+  Mail,
+  Phone,
+  MapPin
 } from "lucide-react";
 
 export default function Footer() {
 
   return (
     <footer className="bg-gradient-to-b from-[#380c15] via-[#2a070f] to-[#1c0409] border-t border-amber-500/25 text-stone-300 relative overflow-hidden">
-      {/* Ambient Maroon & Gold Glows */}
       <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-amber-500/5 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-0 left-10 w-[350px] h-[350px] bg-rose-950/20 rounded-full blur-[120px] pointer-events-none" />
 
-      {/* Trust Badges Strip (Refined & Elegant) */}
       <div className="border-b border-amber-900/30 bg-[#22050c]/70 py-8 px-4 sm:px-6 lg:px-8 relative z-10 backdrop-blur-xs">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
           <div className="flex flex-col items-center p-3">
@@ -73,16 +71,14 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Main Footer Directory */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 xl:gap-10">
-          {/* Brand Intro & 40-Year Heritage */}
           <div className="lg:col-span-4 space-y-4">
             <div>
               <div className="flex items-center gap-3">
-                <img 
-                  src="/images/logo-mark.png" 
-                  alt="LS Gems and Jewellers Logo" 
+                <img
+                  src="/images/logo-mark.png"
+                  alt="LS Gems and Jewellers Logo"
                   className="h-11 sm:h-12 w-auto object-contain brightness-105 drop-shadow-md"
                 />
                 <div>
@@ -105,7 +101,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column: High Jewellery */}
           <div className="lg:col-span-2">
             <h5 className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-300/90 mb-4 font-sans">
               Collections
@@ -144,7 +139,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column: Heritage & House */}
           <div className="lg:col-span-2">
             <h5 className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-300/90 mb-4 font-sans">
               The House
@@ -178,7 +172,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column: Showroom & Direct Contact Desks */}
           <div className="lg:col-span-4">
             <h5 className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-300/90 mb-4 font-sans">
               Showroom & Desks
@@ -229,7 +222,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Strip */}
         <div className="mt-12 pt-7 border-t border-amber-900/30 flex flex-col md:flex-row items-center justify-between text-xs text-stone-400 font-light gap-4">
           <p className="text-stone-400 text-center md:text-left">
             © 2026 L.S Gems & Jewellers. All Rights Reserved.
@@ -247,7 +239,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Developer Credit */}
         <div className="mt-6 pt-4 border-t border-amber-900/40 text-center text-[12.5px] sm:text-[13px]">
           <span className="text-stone-200 font-normal">Design and Developed by</span>{" "}
           <a

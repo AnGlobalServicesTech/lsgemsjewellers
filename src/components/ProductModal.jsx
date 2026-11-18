@@ -2,19 +2,19 @@
 
 import React, { useState } from "react";
 import { useWishlist } from "../context/WishlistContext";
-import { 
-  X, 
-  Heart, 
-  ShieldCheck, 
-  Gem, 
-  Sparkles, 
-  Check, 
-  PhoneCall, 
-  Calendar, 
-  Truck, 
-  RotateCcw, 
-  ZoomIn, 
-  Award, 
+import {
+  X,
+  Heart,
+  ShieldCheck,
+  Gem,
+  Sparkles,
+  Check,
+  PhoneCall,
+  Calendar,
+  Truck,
+  RotateCcw,
+  ZoomIn,
+  Award,
   Layers,
   MessageSquare
 } from "lucide-react";
@@ -28,7 +28,6 @@ export default function ProductModal() {
   const [pinCode, setPinCode] = useState("");
   const [deliveryDate, setDeliveryDate] = useState(null);
 
-  // Close on Escape key
   React.useEffect(() => {
     if (!selectedProduct) return;
     setActiveImageIndex(0);
@@ -43,8 +42,8 @@ export default function ProductModal() {
   if (!selectedProduct) return null;
 
   const isFavorited = isInWishlist(selectedProduct.id);
-  const gallery = selectedProduct.gallery && selectedProduct.gallery.length > 0 
-    ? selectedProduct.gallery 
+  const gallery = selectedProduct.gallery && selectedProduct.gallery.length > 0
+    ? selectedProduct.gallery
     : [selectedProduct.image];
 
   const handleInquiry = (e) => {
@@ -63,15 +62,14 @@ export default function ProductModal() {
   };
 
   return (
-    <div 
+    <div
       className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-stone-900/60 backdrop-blur-sm transition-all duration-300 animate-fadeIn"
       onClick={() => setSelectedProduct(null)}
     >
-      <div 
+      <div
         className="relative w-full max-w-5xl bg-white border border-stone-200 rounded-3xl shadow-[0_25px_70px_rgba(0,0,0,0.25)] overflow-y-auto md:overflow-hidden flex flex-col md:flex-row max-h-[92vh] text-stone-900"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Close Button */}
         <button
           onClick={() => setSelectedProduct(null)}
           className="absolute top-3 right-3 sm:top-4 sm:right-4 z-30 p-2 sm:p-2.5 text-stone-600 hover:text-stone-950 bg-white/95 rounded-full border border-stone-200 hover:border-amber-500 transition-all cursor-pointer shadow-md"
@@ -80,28 +78,23 @@ export default function ProductModal() {
           <X className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
 
-        {/* Product Image & Thumbnail Column */}
         <div className="md:w-1/2 p-4 sm:p-6 bg-[#faf9f6] flex flex-col justify-between border-b md:border-b-0 md:border-r border-stone-200 shrink-0">
-          {/* Main Selected Image */}
           <div className="relative aspect-square max-h-[380px] sm:max-h-none rounded-2xl overflow-hidden bg-stone-100 border border-stone-200/90 group shadow-sm flex items-center justify-center">
             <img
               src={gallery[activeImageIndex] || selectedProduct.image}
               alt={selectedProduct.name}
               className="w-full h-full object-cover object-center transform transition-transform duration-500 group-hover:scale-[1.02]"
             />
-            
-            {/* Tag badge */}
+
             <div className="absolute top-3 left-3 bg-gradient-to-r from-amber-600 to-amber-700 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
               {selectedProduct.tag}
             </div>
 
-            {/* Macro Zoom Badge */}
             <div className="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md text-amber-900 text-[11px] font-medium px-2.5 py-1 rounded-lg border border-amber-200 flex items-center gap-1.5 shadow-sm">
               <ZoomIn className="w-3.5 h-3.5 text-amber-700" /> High-Def Gem Macro
             </div>
           </div>
 
-          {/* Interactive Thumbnails Strip */}
           {gallery.length > 1 && (
             <div className="flex items-center gap-3 mt-4 pt-4 border-t border-stone-200">
               <span className="text-[10px] uppercase tracking-widest text-stone-500 mr-1 flex items-center gap-1 font-semibold">
@@ -123,7 +116,6 @@ export default function ProductModal() {
             </div>
           )}
 
-          {/* Hallmarking Proof Badges */}
           <div className="mt-4 grid grid-cols-2 gap-2 text-[11px] text-stone-600">
             <div className="flex items-center gap-2 p-2 rounded-xl bg-white border border-stone-200 shadow-xs">
               <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
@@ -136,7 +128,6 @@ export default function ProductModal() {
           </div>
         </div>
 
-        {/* Product Details Column */}
         <div className="md:w-1/2 p-6 md:p-8 overflow-y-auto flex flex-col justify-between">
           <div>
             <div className="flex flex-wrap items-center justify-between gap-1.5 text-xs text-amber-800 tracking-widest uppercase mb-1 font-semibold">
@@ -161,7 +152,6 @@ export default function ProductModal() {
               {selectedProduct.description}
             </p>
 
-            {/* Gemstone Specifications Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-3.5 rounded-2xl bg-[#faf9f6] border border-stone-200 mb-6 text-xs">
               <div>
                 <span className="text-stone-500 block text-[10px] uppercase tracking-wider mb-0.5 font-medium">Gemstone / Artistry</span>
@@ -185,7 +175,6 @@ export default function ProductModal() {
               </div>
             </div>
 
-            {/* Custom Metal Choice */}
             <div className="mb-6">
               <label className="block text-xs font-semibold text-stone-700 uppercase tracking-wider mb-2">
                 Select Custom Precious Metal
@@ -208,7 +197,6 @@ export default function ProductModal() {
               </div>
             </div>
 
-            {/* Insured Delivery Estimator */}
             <div className="mb-6 p-3.5 rounded-2xl bg-[#faf9f6] border border-stone-200">
               <div className="flex items-center gap-2 mb-2">
                 <Truck className="w-4 h-4 text-amber-700" />
@@ -237,7 +225,6 @@ export default function ProductModal() {
             </div>
           </div>
 
-          {/* Action CTAs */}
           <div className="space-y-3 pt-3 border-t border-stone-200">
             {inquirySent ? (
               <div className="p-3 bg-emerald-50 border border-emerald-300 rounded-xl text-center text-emerald-800 text-xs flex items-center justify-center gap-2">

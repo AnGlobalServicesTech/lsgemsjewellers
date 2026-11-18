@@ -1,28 +1,28 @@
 "use client";
 
 import React, { useState } from "react";
-import { 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock, 
-  Calendar, 
-  Check, 
-  Sparkles, 
-  Send, 
-  MessageSquare, 
-  ShieldCheck, 
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  Calendar,
+  Check,
+  Sparkles,
+  Send,
+  MessageSquare,
+  ShieldCheck,
   Truck,
   Loader2,
   AlertCircle
 } from "lucide-react";
 import { db } from "@/lib/firebase";
-import { 
-  collection, 
-  doc, 
+import {
+  collection,
+  doc,
   setDoc,
-  runTransaction, 
-  serverTimestamp 
+  runTransaction,
+  serverTimestamp
 } from "firebase/firestore";
 
 export default function ContactPage() {
@@ -48,7 +48,6 @@ export default function ContactPage() {
     let savedToFirestore = false;
 
     try {
-      // 1. Try atomic Firestore transaction if Firestore db is connected
       if (db) {
         try {
           leadId = await runTransaction(db, async (transaction) => {
@@ -93,7 +92,6 @@ export default function ContactPage() {
         }
       }
 
-      // 2. If not saved via transaction (permission-denied or offline), generate sequential local Lead ID
       if (!savedToFirestore || !leadId) {
         let localCount = 1;
         if (typeof window !== "undefined") {
@@ -107,7 +105,6 @@ export default function ContactPage() {
         }
         leadId = `LSGJ${String(localCount).padStart(4, "0")}`;
 
-        // Also attempt direct setDoc just in case
         if (db) {
           try {
             await setDoc(doc(db, "contact_inquiries", leadId), {
@@ -126,7 +123,6 @@ export default function ContactPage() {
           }
         }
 
-        // Backup lead into local browser storage so it is never lost
         if (typeof window !== "undefined") {
           try {
             const backupLeads = JSON.parse(localStorage.getItem("lsgj_inquiries") || "[]");
@@ -146,7 +142,6 @@ export default function ContactPage() {
         }
       }
 
-      // 3. Mark form as confirmed and display confirmation screen
       setSubmittedDetails({
         id: leadId,
         name: formData.name.trim(),
@@ -165,7 +160,6 @@ export default function ContactPage() {
       });
     } catch (error) {
       console.error("Inquiry submission error:", error);
-      // Emergency fallback to ensure customer inquiry is never rejected
       const fallbackId = `LSGJ${String(Math.floor(1000 + Math.random() * 9000))}`;
       setSubmittedDetails({
         id: fallbackId,
@@ -185,7 +179,6 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-[#f6e6d3] text-stone-900 py-14 sm:py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Page Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-xs uppercase tracking-[0.25em] text-[#801428] font-bold block mb-2">
             LS Gems and Jewellers
@@ -199,9 +192,7 @@ export default function ContactPage() {
           <div className="w-16 h-[2px] bg-amber-600 mx-auto mt-5" />
         </div>
 
-        {/* Main Section: Form & Direct Contact Info */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
-          {/* Left Column: Inquiry Form + Trust Notice Below */}
           <div className="lg:col-span-7 space-y-6">
             <div className="bg-white border border-stone-200/90 rounded-3xl p-6 sm:p-9 shadow-lg">
             <div className="flex items-center gap-3 mb-6">
@@ -214,7 +205,6 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Error Banner */}
             {errorMessage && (
               <div className="mb-6 p-4 rounded-2xl bg-red-50 border border-red-200 text-red-900 text-xs flex items-start gap-3">
                 <AlertCircle className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
@@ -240,7 +230,7 @@ export default function ContactPage() {
                 <div className="w-14 h-14 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto shadow-md ring-4 ring-emerald-100">
                   <Check className="w-7 h-7 stroke-[2.5]" />
                 </div>
-                
+
                 <div className="space-y-1">
                   <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#801428]">
                     Inquiry Received
@@ -367,7 +357,6 @@ export default function ContactPage() {
             )}
             </div>
 
-            {/* Pan-India Trust & No Franchise Notice (Placed Under Form) */}
             <div className="bg-gradient-to-br from-[#380c15] via-[#2a070f] to-[#1c0409] text-amber-100 border border-amber-500/30 rounded-3xl p-6 sm:p-7 shadow-md space-y-3">
               <div className="flex items-center gap-2 text-amber-300">
                 <ShieldCheck className="w-5 h-5 shrink-0" />
@@ -385,9 +374,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Right Column: Direct Contact & Shop Details */}
           <div className="lg:col-span-5 space-y-4">
-            {/* Showroom Physical Address Card */}
             <div className="bg-white border border-stone-200 rounded-3xl p-6 sm:p-7 shadow-sm space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-stone-100">
                 <div>
@@ -435,7 +422,6 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Direct Leadership & Desks Card (From Business Card) */}
             <div className="bg-white border border-stone-200 rounded-3xl p-6 sm:p-7 shadow-sm space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-stone-100">
                 <div>
@@ -448,7 +434,6 @@ export default function ContactPage() {
               </div>
 
               <div className="space-y-3 text-xs">
-                {/* Retail Desk */}
                 <div className="p-3.5 rounded-xl bg-stone-50 hover:bg-amber-50/50 border border-stone-200 transition-colors">
                   <div className="flex items-center justify-between mb-1">
                     <span className="font-serif text-sm font-bold text-stone-900">Punit Soni Ji</span>
@@ -460,16 +445,16 @@ export default function ContactPage() {
                     22K Gold Jewellery, Bridal Trousseaus &amp; In-Shop Retail Consultation
                   </p>
                   <div className="flex items-center gap-3">
-                    <a 
-                      href="tel:+919887996201" 
+                    <a
+                      href="tel:+919887996201"
                       className="inline-flex items-center gap-1.5 font-semibold text-[#801428] hover:underline"
                     >
                       <Phone className="w-3.5 h-3.5" />
                       <span>+91 98879 96201</span>
                     </a>
                     <span className="text-stone-300">|</span>
-                    <a 
-                      href="https://wa.me/919887996201?text=Namaste%20Punit%20Ji,%20I%20would%20like%20to%20inquire%20about%20jewellery%20at%20LS%20Gems." 
+                    <a
+                      href="https://wa.me/919887996201?text=Namaste%20Punit%20Ji,%20I%20would%20like%20to%20inquire%20about%20jewellery%20at%20LS%20Gems."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 font-semibold text-emerald-700 hover:underline"
@@ -480,7 +465,6 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Wholesale Desk */}
                 <div className="p-3.5 rounded-xl bg-stone-50 hover:bg-amber-50/50 border border-stone-200 transition-colors">
                   <div className="flex items-center justify-between mb-1">
                     <span className="font-serif text-sm font-bold text-stone-900">Pawan Soni Ji</span>
@@ -491,8 +475,8 @@ export default function ContactPage() {
                   <p className="text-[11px] text-stone-500 mb-2 font-light">
                     B2B Jeweller Supply, Bulk Hallmarked Bullion & Wholesale Orders
                   </p>
-                  <a 
-                    href="tel:+919413862371" 
+                  <a
+                    href="tel:+919413862371"
                     className="inline-flex items-center gap-1.5 font-semibold text-[#801428] hover:underline"
                   >
                     <Phone className="w-3.5 h-3.5" />
@@ -500,7 +484,6 @@ export default function ContactPage() {
                   </a>
                 </div>
 
-                {/* Chairman Desk */}
                 <div className="p-3.5 rounded-xl bg-stone-50 hover:bg-amber-50/50 border border-stone-200 transition-colors">
                   <div className="flex items-center justify-between mb-1">
                     <span className="font-serif text-sm font-bold text-stone-900">Subhash Soni Ji</span>
@@ -511,8 +494,8 @@ export default function ContactPage() {
                   <p className="text-[11px] text-stone-500 mb-2 font-light">
                     Founder (40 Years of Heritage & Corporate Guidance)
                   </p>
-                  <a 
-                    href="tel:+919414617887" 
+                  <a
+                    href="tel:+919414617887"
                     className="inline-flex items-center gap-1.5 font-semibold text-[#801428] hover:underline"
                   >
                     <Phone className="w-3.5 h-3.5" />

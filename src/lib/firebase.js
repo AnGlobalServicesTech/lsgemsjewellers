@@ -1,7 +1,6 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
-// Firebase Configuration from Environment Variables
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
   authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
@@ -15,7 +14,6 @@ const firebaseConfig = {
 let app = null;
 let db = null;
 
-// Helper to check if credentials are provided
 export const isFirebaseConfigured = () => {
   return Boolean(
     process.env.NEXT_PUBLIC_FIREBASE_API_KEY &&
@@ -23,7 +21,6 @@ export const isFirebaseConfigured = () => {
   );
 };
 
-// Safe initialization: Only initialize if required configuration keys are present
 try {
   if (isFirebaseConfigured()) {
     app = !getApps().length ? initializeApp(firebaseConfig) : getApp();

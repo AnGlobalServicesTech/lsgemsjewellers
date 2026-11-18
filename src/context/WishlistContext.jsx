@@ -9,7 +9,6 @@ export function WishlistProvider({ children }) {
   const [isWishlistOpen, setIsWishlistOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
-  // Load wishlist from local storage safely
   useEffect(() => {
     try {
       const saved = localStorage.getItem("lsgems_wishlist");
@@ -21,7 +20,6 @@ export function WishlistProvider({ children }) {
     }
   }, []);
 
-  // Save changes
   useEffect(() => {
     try {
       localStorage.setItem("lsgems_wishlist", JSON.stringify(wishlist));

@@ -2,14 +2,14 @@
 
 import React from "react";
 import Link from "next/link";
-import { 
-  Award, 
-  ShieldCheck, 
-  RefreshCw, 
-  Scale, 
-  CheckCircle2, 
-  Smartphone, 
-  Sparkles, 
+import {
+  Award,
+  ShieldCheck,
+  RefreshCw,
+  Scale,
+  CheckCircle2,
+  Smartphone,
+  Sparkles,
   ArrowRight,
   Phone
 } from "lucide-react";
@@ -42,7 +42,6 @@ export default function HallmarkingExchangePage() {
 
   return (
     <div className="min-h-screen bg-[#f6e6d3] text-stone-900 pb-20">
-      {/* Header Banner */}
       <section className="relative bg-gradient-to-br from-[#380c15] via-[#24060d] to-[#180307] text-white pt-14 pb-16 sm:py-20 border-b border-amber-500/25 overflow-hidden">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-0 left-10 w-96 h-96 bg-rose-950/40 rounded-full blur-[120px] pointer-events-none" />
@@ -67,10 +66,8 @@ export default function HallmarkingExchangePage() {
         </div>
       </section>
 
-      {/* Main Content */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 space-y-12">
-        
-        {/* Hallmarking Section */}
+
         <div className="bg-white border border-stone-200/90 rounded-3xl p-6 sm:p-10 shadow-sm space-y-8">
           <div className="space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-[#801428] text-xs font-bold uppercase tracking-wider">
@@ -85,10 +82,9 @@ export default function HallmarkingExchangePage() {
             </p>
           </div>
 
-          {/* 3 Hallmark Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {hallmarkSteps.map((step) => (
-              <div 
+              <div
                 key={step.symbol}
                 className="p-6 rounded-2xl bg-amber-50/50 border border-amber-200/80 flex flex-col justify-between hover:border-amber-400 transition-all"
               >
@@ -107,7 +103,6 @@ export default function HallmarkingExchangePage() {
             ))}
           </div>
 
-          {/* How to Verify on BIS Care App */}
           <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-[#380c15] via-[#2a070f] to-[#1c0409] text-white space-y-4">
             <div className="flex items-center gap-2.5 text-amber-300">
               <Smartphone className="w-5 h-5" />
@@ -129,7 +124,6 @@ export default function HallmarkingExchangePage() {
           </div>
         </div>
 
-        {/* Old Gold Exchange & German XRF Spectrometer Section */}
         <div className="bg-white border border-stone-200/90 rounded-3xl p-6 sm:p-10 shadow-sm space-y-6">
           <div className="space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-[#801428] text-xs font-bold uppercase tracking-wider">
@@ -167,7 +161,6 @@ export default function HallmarkingExchangePage() {
           </div>
         </div>
 
-        {/* Lifetime Buyback & Maintenance Grid */}
         <div className="bg-white border border-stone-200/90 rounded-3xl p-6 sm:p-10 shadow-sm space-y-6">
           <div className="space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-[#801428] text-xs font-bold uppercase tracking-wider">
@@ -205,20 +198,19 @@ export default function HallmarkingExchangePage() {
             </div>
           </div>
 
-          {/* Action CTAs */}
           <div className="pt-6 border-t border-stone-100 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs text-stone-600 font-light">
               Visit our showroom in Churi Bazar, Ajmer for non-destructive XRF assay testing or connect directly with our desk:
             </p>
             <div className="flex flex-wrap items-center gap-3">
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#380c15] to-[#25050c] text-amber-200 text-xs font-bold uppercase tracking-wider hover:brightness-110 shadow-sm"
               >
                 Visit Ajmer Showroom
               </Link>
-              <a 
-                href="tel:+919887996201" 
+              <a
+                href="tel:+919887996201"
                 className="px-5 py-2.5 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-800 text-xs font-semibold"
               >
                 Retail: +91 98879 96201

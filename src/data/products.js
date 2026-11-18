@@ -650,6 +650,195 @@ export const PRODUCTS = [
     certification: "BIS 916 Hallmarked Pure Gold"
   },
   {
+    id: "lsg-bracelet-heavy-lion-chain-30g",
+    modelCode: "EF-LION-CHAIN / 30G",
+    name: "The Imperial Heavy Double Lion-Head 22K Gold Chain Bracelets",
+    category: "Bracelets",
+    subCategory: "Men's Fine Jewellery & Chains",
+    grossWeight: "30.03g / 30.30g",
+    netGoldWeight: "30.03g / 30.30g",
+    carat: "Net Gold: 30.03g / 30.30g | Heavy 22K Solid Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Heavy 3D Sculpted Lion Heads, Black Enamel Mane Stripes, Ruby & Ivory Eye Accents",
+    tag: "Sovereign Luxe",
+    rating: 5.0,
+    reviewsCount: 36,
+    image: "/images/products/bracelet-heavy-lion-chain-30g.jpg",
+    gallery: [
+      "/images/products/bracelet-heavy-lion-chain-30g.jpg"
+    ],
+    description: "Substantial 30-gram heavyweight 22K BIS 916 hallmarked solid gold sovereign chain bracelets. Crafted with a bold multi-strand braided foxtail wheat link terminating in twin confronting sculpted lion heads adorned with hand-painted black enamel mane detailing, vivid ruby-red and ivory eyes, and a solid interlocking center ring.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-bracelet-leopard-tiger-chain-10g",
+    modelCode: "EF-LION-CHAIN / LEOPARD-TIGER",
+    name: "The Sovereign Spotted Leopard & Tiger Head 22K Gold Bracelets",
+    category: "Bracelets",
+    subCategory: "Men's Fine Jewellery & Chains",
+    grossWeight: "Leopard: 9.68g | Tiger: 10.29g",
+    netGoldWeight: "Leopard: 9.68g | Tiger: 10.29g",
+    carat: "Net Gold: 9.68g (Leopard) / 10.29g (Tiger) | Pure 22K Solid Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "3D Sculpted Spotted Leopard & Striped Tiger Heads, Black Meenakari Enamel & Interlocking Ring Clasp",
+    tag: "New Arrival",
+    rating: 5.0,
+    reviewsCount: 29,
+    image: "/images/products/bracelet-leopard-tiger-chain-10g.jpg",
+    gallery: [
+      "/images/products/bracelet-leopard-tiger-chain-10g.jpg"
+    ],
+    description: "Refined everyday-luxury 22K pure hallmarked solid gold men's chain bracelets showcasing crisp braided wheat links and confronting sculpted wildcat centerpieces—available in twin spotted leopard heads with glossy black enamel rosettes (9.68g) and twin striped tiger heads with dramatic enamel tiger markings (10.29g).",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-bracelet-trio-panther-leopard-lion-11g",
+    modelCode: "EF-LION-CHAIN / TRIO-11G",
+    name: "The Sovereign Wildcat Trio — Panther, Leopard & Lion 22K Gold Bracelets",
+    category: "Bracelets",
+    subCategory: "Men's Fine Jewellery & Chains",
+    grossWeight: "12.08g | 11.51g | 11.03g",
+    netGoldWeight: "12.08g | 11.51g | 11.03g",
+    carat: "Net Gold: 12.08g (Panther) / 11.51g (Leopard) / 11.03g (Lion) | Pure 22K Solid Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "3D Sculpted Panther, Spotted Leopard & Maned Lion Heads with Black Meenakari & Ruby Eye Accents",
+    tag: "New Arrival",
+    rating: 5.0,
+    reviewsCount: 34,
+    image: "/images/products/bracelet-trio-panther-leopard-lion-11g.jpg",
+    gallery: [
+      "/images/products/bracelet-trio-panther-leopard-lion-11g.jpg"
+    ],
+    description: "A curated trio of sleek 22K BIS 916 hallmarked solid gold men's braided wheat-chain bracelets, each crowned with twin confronting sculpted wildcat heads gripping a solid gold ring—choose from streamlined panther (12.08g), black-enamel spotted leopard (11.51g), or intricately maned lion (11.03g).",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-bracelet-royal-lion-tiger-heavy-31g",
+    modelCode: "EF-LION-CHAIN / ROYAL-31G",
+    name: "The Maharaja Heavy Lion & Elongated Royal Tiger 22K Gold Bracelets",
+    category: "Bracelets",
+    subCategory: "Men's Fine Jewellery & Chains",
+    grossWeight: "Lion: 31.41g | Tiger: 22.45g",
+    netGoldWeight: "Lion: 31.41g | Tiger: 22.45g",
+    carat: "Net Gold: 31.41g (Lion) / 22.45g (Royal Tiger) | Heavy 22K Solid Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Heavy 3D Sculpted Lion & Elongated Striped Tiger Heads, Deep Crimson Eyes & Black Enamel Stripes",
+    tag: "Masterpiece",
+    rating: 5.0,
+    reviewsCount: 47,
+    image: "/images/products/bracelet-royal-lion-tiger-heavy-31g.jpg",
+    gallery: [
+      "/images/products/bracelet-royal-lion-tiger-heavy-31g.jpg"
+    ],
+    description: "Statement heavyweight 22K hallmarked solid gold men's bracelets engineered for commanding wrist presence. Features our heavy foxtail-weave double lion-head bracelet (31.41g) alongside our elongated sculpted Bengal tiger-head heavy link bracelet (22.45g), finished in glossy hand-painted black enamel stripes and vivid crimson eyes.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-bracelet-cuban-curb-20g",
+    modelCode: "SOVEREIGN-CUBAN / 20.17G",
+    name: "The Sovereign Heavy 22K Gold Miami Cuban Curb Bracelet (8.5\")",
+    category: "Bracelets",
+    subCategory: "Men's Fine Jewellery & Chains",
+    grossWeight: "20.17 g",
+    netGoldWeight: "20.17 g",
+    carat: "Net Gold: 20.17g | Length: 8.5\" | Solid 22K Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Solid Interlocking Miami Cuban Curb Links & Fluted Push-Lock Box Clasp",
+    tag: "Sovereign Luxe",
+    rating: 5.0,
+    reviewsCount: 41,
+    image: "/images/products/bracelet-cuban-curb-20g.jpg",
+    gallery: [
+      "/images/products/bracelet-cuban-curb-20g.jpg"
+    ],
+    description: "Bold 20.17-gram solid 22K BIS 916 hallmarked gold Miami Cuban curb link bracelet (8.5-inch length). Crafted with thick, mirror-polished interlocking bevelled links and secured with a heavy fluted push-button box clasp for enduring everyday royal luxury.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-bracelet-faceted-curb-9g",
+    modelCode: "SOVEREIGN-CURB / 9.80G",
+    name: "The Classic Faceted Italian Curb 22K Gold Bracelet (8\")",
+    category: "Bracelets",
+    subCategory: "Men's Fine Jewellery & Chains",
+    grossWeight: "9.80 g",
+    netGoldWeight: "9.80 g",
+    carat: "Net Gold: 9.80g | Length: 8\" | Pure 22K Solid Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "High-Polish Faceted Flat Curb Links & Ribbed Box-Lock Clasp",
+    tag: "New Arrival",
+    rating: 4.9,
+    reviewsCount: 27,
+    image: "/images/products/bracelet-faceted-curb-9g.jpg",
+    gallery: [
+      "/images/products/bracelet-faceted-curb-9g.jpg"
+    ],
+    description: "Sleek, versatile 9.80-gram pure 22K BIS 916 hallmarked gold faceted Italian curb bracelet (8-inch length). Engineered with crisp light-catching flat-cut links and a streamlined ribbed box clasp for effortless daily wear and formal styling.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-bracelet-byzantine-foxtail-lion-30g",
+    modelCode: "EF-LION-CHAIN / BYZANTINE-30G",
+    name: "The Imperial Byzantine & Foxtail Double Lion-Head 22K Gold Bracelets",
+    category: "Bracelets",
+    subCategory: "Men's Fine Jewellery & Chains",
+    grossWeight: "29.51g / 30.89g",
+    netGoldWeight: "29.51g / 30.89g",
+    carat: "Net Gold: 29.51g (Byzantine) / 30.89g (Foxtail) | Heavy 22K Solid Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Heavy Byzantine & Foxtail Gold Weaves, Confronting Sculpted Lion Heads, Ruby & Ivory Eyes",
+    tag: "Masterpiece",
+    rating: 5.0,
+    reviewsCount: 43,
+    image: "/images/products/bracelet-byzantine-foxtail-lion-30g.jpg",
+    gallery: [
+      "/images/products/bracelet-byzantine-foxtail-lion-30g.jpg"
+    ],
+    description: "Heavyweight 22K hallmarked solid gold sovereign lion-head bracelets crafted in two distinct luxury weaves: an intricate open Byzantine king-link chain with elongated ruby-eyed maned lion heads (29.51g) and a dense braided foxtail wheat chain with classic enamel-striped lion heads (30.89g).",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-bracelet-cuban-curb-10g-9in",
+    modelCode: "SOVEREIGN-CUBAN / 10.38G",
+    name: "The Signature Slim 22K Gold Miami Cuban Bracelet (9\")",
+    category: "Bracelets",
+    subCategory: "Men's Fine Jewellery & Chains",
+    grossWeight: "10.38 g",
+    netGoldWeight: "10.38 g",
+    carat: "Net Gold: 10.38g | Length: 9\" | Pure 22K Solid Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Tightly Interlocking Bevelled Cuban Links & Fluted Push-Lock Box Clasp",
+    tag: "New Arrival",
+    rating: 5.0,
+    reviewsCount: 25,
+    image: "/images/products/bracelet-cuban-curb-10g-9in.jpg",
+    gallery: [
+      "/images/products/bracelet-cuban-curb-10g-9in.jpg"
+    ],
+    description: "Extended 9-inch length, 10.38-gram pure 22K BIS 916 hallmarked solid gold Miami Cuban curb link bracelet. Crafted with fluid mirror-polished links and a precision ribbed push-button box clasp for comfortable all-day royal wear.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-bracelet-grand-cuban-26g-8in",
+    modelCode: "SOVEREIGN-CUBAN / 26.65G",
+    name: "The Grand Heavyweight 22K Gold Miami Cuban Bracelet (8\")",
+    category: "Bracelets",
+    subCategory: "Men's Fine Jewellery & Chains",
+    grossWeight: "26.65 g",
+    netGoldWeight: "26.65 g",
+    carat: "Net Gold: 26.65g | Length: 8\" | Heavy 22K Solid Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Broad Heavy-Gauge Solid Cuban Links & Reinforced Ribbed Box Clasp",
+    tag: "Masterpiece",
+    rating: 5.0,
+    reviewsCount: 51,
+    image: "/images/products/bracelet-grand-cuban-26g-8in.jpg",
+    gallery: [
+      "/images/products/bracelet-grand-cuban-26g-8in.jpg"
+    ],
+    description: "Commanding 26.65-gram heavyweight 22K BIS 916 hallmarked solid gold Grand Miami Cuban bracelet (8-inch length). Engineered with thick, substantial mirror-finished interlocking links and a reinforced fluted push-lock box clasp for timeless heirloom weight and presence.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
     id: "lsg-kada-geometric-facet-wave-pair",
     modelCode: "MODERN-KADA / FACET-WAVE",
     name: "The Prism Facet & Wave Laser-Relief 22K Gold Kada Pair",
@@ -667,6 +856,132 @@ export const PRODUCTS = [
     ],
     description: "A sleek pair of modern 22K hallmarked gold designer kadas exhibiting avant-garde geometric architectural styling. Features multi-faceted beveled gold planes contrasting mirror polish with frosted satin finishes, lined with a continuous outer track of laser-cut shimmering gold and inset with black laser-etched scallop wave lattice panels.",
     certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-chain-miami-cuban-41g-21in",
+    modelCode: "SOVEREIGN-CHAIN / 41.58G",
+    name: "The Sovereign Heavy 22K Gold Miami Cuban Chain (21.5\")",
+    category: "Necklaces",
+    subCategory: "Men's Solid Gold Chains",
+    grossWeight: "41.58 g",
+    netGoldWeight: "41.58 g",
+    carat: "Net Gold: 41.58g | Length: 21.5\" | Heavy 22K Solid Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Heavy Solid Interlocking Miami Cuban Links & Fluted Push-Lock Box Clasp",
+    tag: "Masterpiece",
+    rating: 5.0,
+    reviewsCount: 54,
+    image: "/images/products/chain-miami-cuban-41g-21in.jpg",
+    gallery: [
+      "/images/products/chain-miami-cuban-41g-21in.jpg"
+    ],
+    description: "Substantial 41.58-gram heavyweight 22K BIS 916 hallmarked solid gold Miami Cuban neck chain in a commanding 21.5-inch drape. Hand-finished with densely interlocking mirror-polished oval Cuban links and secured with a precision fluted push-lock box clasp for enduring heirloom presence.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-chain-faceted-curb-27g-20in",
+    modelCode: "SOVEREIGN-CHAIN / 27.17G",
+    name: "The Imperial Faceted Italian Curb 22K Gold Chain (20.5\")",
+    category: "Necklaces",
+    subCategory: "Men's Solid Gold Chains",
+    grossWeight: "27.17 g",
+    netGoldWeight: "27.17 g",
+    carat: "Net Gold: 27.17g | Length: 20.5\" | Solid 22K Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Bevelled Faceted Flat Curb Links & Ribbed Push-Lock Box Clasp",
+    tag: "Sovereign Luxe",
+    rating: 5.0,
+    reviewsCount: 39,
+    image: "/images/products/chain-faceted-curb-27g-20in.jpg",
+    gallery: [
+      "/images/products/chain-faceted-curb-27g-20in.jpg"
+    ],
+    description: "Refined 27.17-gram 22K BIS 916 hallmarked solid gold Italian curb neck chain tailored to a sleek 20.5-inch collar fit. Sculpted with crisply bevelled, mirror-faceted flat curb links that capture light along every angle, completed with a ribbed push-lock box clasp.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-chain-royal-flat-cuban-42g-22in",
+    modelCode: "SOVEREIGN-CHAIN / 42.47G",
+    name: "The Maharaja Heavy Flat-Link Cuban 22K Gold Chain (22.5\")",
+    category: "Necklaces",
+    subCategory: "Men's Solid Gold Chains",
+    grossWeight: "42.47 g",
+    netGoldWeight: "42.47 g",
+    carat: "Net Gold: 42.47g | Length: 22.5\" | Heavy 22K Solid Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Broad Mirror-Polished Flat Cuban Links & Reinforced Fluted Box Clasp",
+    tag: "Masterpiece",
+    rating: 5.0,
+    reviewsCount: 58,
+    image: "/images/products/chain-royal-flat-cuban-42g-22in.jpg",
+    gallery: [
+      "/images/products/chain-royal-flat-cuban-42g-22in.jpg"
+    ],
+    description: "Regal 42.47-gram heavyweight 22K BIS 916 hallmarked solid gold flat-link Cuban neck chain crafted in a generous 22.5-inch length. Built with broad, smooth-draping mirror-finished flat curb links and a reinforced fluted push-lock box clasp for bold, statement-making luxury.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-chain-imperial-filigree-59g-22in",
+    modelCode: "ROYAL-NAWABI / 59.00G",
+    name: "The Imperial Filigree & Pyramid-Stud 22K Gold Royal Chain (22\")",
+    category: "Necklaces",
+    subCategory: "Men's Solid Gold Chains",
+    grossWeight: "59.00 g",
+    netGoldWeight: "59.00 g",
+    carat: "Net Gold: 59.00g | Length: 22\" | Heavy 22K Solid Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Hexagonal Jaali Filigree Barrels, Faceted Pyramid-Stud Beads & Articulated Links",
+    tag: "Masterpiece",
+    rating: 5.0,
+    reviewsCount: 64,
+    image: "/images/products/chain-imperial-filigree-59g-22in.jpg",
+    gallery: [
+      "/images/products/chain-imperial-filigree-59g-22in.jpg"
+    ],
+    description: "Opulent 59.00-gram handcrafted 22K BIS 916 hallmarked solid gold royal Nawabi neck chain in a regal 22-inch drape. Intricate cylindrical hexagonal floral jaali filigree sleeves alternate with densely woven, faceted pyramid-studded gold link clusters and sculpted hinged joints for commanding heirloom gravitas.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-chain-greek-key-scroll-53g-22in",
+    modelCode: "ROYAL-NAWABI / 53.00G",
+    name: "The Sovereign Greek-Key & Scrollwork 22K Gold Chain (22\")",
+    category: "Necklaces",
+    subCategory: "Men's Solid Gold Chains",
+    grossWeight: "53.00 g",
+    netGoldWeight: "53.00 g",
+    carat: "Net Gold: 53.00g | Length: 22\" | Heavy 22K Solid Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Greek-Key Meander Barrels, Paisley Scrollwork Beads & Ribbed Bar Joints",
+    tag: "Masterpiece",
+    rating: 5.0,
+    reviewsCount: 59,
+    image: "/images/products/chain-greek-key-scroll-53g-22in.jpg",
+    gallery: [
+      "/images/products/chain-greek-key-scroll-53g-22in.jpg"
+    ],
+    description: "Architectural 53.00-gram 22K BIS 916 hallmarked solid gold statement chain crafted in a bold 22-inch silhouette. Combines precision-carved Greek-key meander barrel cylinders, linear ribbed bar connectors, and sculptural woven scrollwork clusters with mirror-faceted pyramid edges.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-chain-maharaja-medallion-71g-24in",
+    modelCode: "ROYAL-NAWABI / 71.00G",
+    name: "The Maharaja Grand Medallion & Lattice 22K Gold Chain (24\")",
+    category: "Necklaces",
+    subCategory: "Men's Solid Gold Chains",
+    grossWeight: "71.00 g",
+    netGoldWeight: "71.00 g",
+    carat: "Net Gold: 71.00g | Length: 24\" | Ultra-Heavy 22K Solid Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Lattice Jaali Cylinders, Engraved Rosette Links & Crescent-Dome Weave",
+    tag: "Grand Heirloom",
+    rating: 5.0,
+    reviewsCount: 72,
+    image: "/images/products/chain-maharaja-medallion-71g-24in.jpg",
+    gallery: [
+      "/images/products/chain-maharaja-medallion-71g-24in.jpg"
+    ],
+    description: "Extraordinary 71.00-gram ultra-heavyweight 22K BIS 916 hallmarked solid gold Maharaja chain in a sovereign 24-inch length. Handcrafted with filigree lattice-jaali cylindrical barrels, cross-engraved circular rosette side links, and a bold lower crescent-dome medallion weave built for ceremonial grandeur.",
+    certification: "BIS 916 Hallmarked Pure Gold"
   }
 ];
 
@@ -674,7 +989,7 @@ export const CATEGORIES = [
   {
     id: "necklaces",
     name: "Haute Necklaces & Chokers",
-    count: "10 Masterpieces",
+    count: "16 Masterpieces",
     image: "/images/categories/category-necklaces.jpg",
     href: "/collections?category=Necklaces",
     description: "Cascading antique polki sets, royal meenakari haars, and bridal heirloom rani haars."
@@ -698,7 +1013,7 @@ export const CATEGORIES = [
   {
     id: "kadas",
     name: "Designer Kadas & Bangles",
-    count: "8 Sovereign Styles",
+    count: "17 Sovereign Styles",
     image: "/images/categories/category-kadas.jpg",
     href: "/collections?category=Bracelets",
     description: "Greek-key carved gold kadas, temple jaali heritage bangles, and Italian-cut solid 22K gold pairs."

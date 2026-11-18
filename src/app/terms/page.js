@@ -2,14 +2,14 @@
 
 import React from "react";
 import Link from "next/link";
-import { 
-  ShieldCheck, 
-  Award, 
-  Scale, 
-  FileText, 
-  RefreshCw, 
-  Truck, 
-  Sparkles, 
+import {
+  ShieldCheck,
+  Award,
+  Scale,
+  FileText,
+  RefreshCw,
+  Truck,
+  Sparkles,
   AlertCircle,
   HelpCircle,
   Phone
@@ -18,7 +18,6 @@ import {
 export default function TermsPage() {
   return (
     <div className="min-h-screen bg-[#f6e6d3] text-stone-900 pb-20">
-      {/* Header Banner */}
       <section className="relative bg-gradient-to-br from-[#380c15] via-[#24060d] to-[#180307] text-white pt-14 pb-16 sm:py-20 border-b border-amber-500/25 overflow-hidden">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-0 left-10 w-96 h-96 bg-rose-950/40 rounded-full blur-[120px] pointer-events-none" />
@@ -40,11 +39,9 @@ export default function TermsPage() {
         </div>
       </section>
 
-      {/* Main Content Sections */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-14">
         <div className="bg-white border border-stone-200/90 rounded-3xl p-6 sm:p-10 shadow-sm space-y-10">
-          
-          {/* Section 1 */}
+
           <div className="space-y-3 pb-8 border-b border-stone-100">
             <div className="flex items-center gap-3">
               <span className="p-2.5 rounded-xl bg-amber-100 text-[#801428]">
@@ -64,7 +61,6 @@ export default function TermsPage() {
             </ul>
           </div>
 
-          {/* Section 2 */}
           <div className="space-y-3 pb-8 border-b border-stone-100">
             <div className="flex items-center gap-3">
               <span className="p-2.5 rounded-xl bg-amber-100 text-[#801428]">
@@ -84,7 +80,6 @@ export default function TermsPage() {
             </ul>
           </div>
 
-          {/* Section 3 */}
           <div className="space-y-3 pb-8 border-b border-stone-100">
             <div className="flex items-center gap-3">
               <span className="p-2.5 rounded-xl bg-amber-100 text-[#801428]">
@@ -105,7 +100,6 @@ export default function TermsPage() {
             </ul>
           </div>
 
-          {/* Section 4 */}
           <div className="space-y-3 pb-8 border-b border-stone-100">
             <div className="flex items-center gap-3">
               <span className="p-2.5 rounded-xl bg-amber-100 text-[#801428]">
@@ -125,7 +119,6 @@ export default function TermsPage() {
             </ul>
           </div>
 
-          {/* Section 5 */}
           <div className="space-y-3 pb-8 border-b border-stone-100">
             <div className="flex items-center gap-3">
               <span className="p-2.5 rounded-xl bg-amber-100 text-[#801428]">
@@ -145,7 +138,6 @@ export default function TermsPage() {
             </ul>
           </div>
 
-          {/* Section 6 */}
           <div className="space-y-3 pb-8 border-b border-stone-100">
             <div className="flex items-center gap-3">
               <span className="p-2.5 rounded-xl bg-amber-100 text-[#801428]">
@@ -165,7 +157,6 @@ export default function TermsPage() {
             </ul>
           </div>
 
-          {/* Section 7 */}
           <div className="space-y-3 p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
             <div className="flex items-center gap-2.5 text-[#801428]">
               <AlertCircle className="w-5 h-5 shrink-0" />
@@ -178,22 +169,21 @@ export default function TermsPage() {
             </p>
           </div>
 
-          {/* Contact Assistance */}
           <div className="pt-4 text-center space-y-2">
             <p className="text-xs text-stone-500">
               Have questions regarding our terms, certifications, or custom orders?
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <a 
-                href="tel:+919887996201" 
+              <a
+                href="tel:+919887996201"
                 className="inline-flex items-center gap-2 text-xs font-semibold text-[#801428] hover:underline"
               >
                 <Phone className="w-3.5 h-3.5" />
                 <span>Retail Desk: +91 98879 96201</span>
               </a>
               <span className="text-stone-300">|</span>
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 className="text-xs font-semibold text-[#801428] hover:underline"
               >
                 Book a Private Consultation

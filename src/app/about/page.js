@@ -2,17 +2,17 @@
 
 import React from "react";
 import Link from "next/link";
-import { 
-  ShieldCheck, 
-  Award, 
-  Gem, 
-  CheckCircle2, 
-  ArrowRight, 
-  Phone, 
-  Calendar, 
-  Sparkles, 
-  Scale, 
-  Truck, 
+import {
+  ShieldCheck,
+  Award,
+  Gem,
+  CheckCircle2,
+  ArrowRight,
+  Phone,
+  Calendar,
+  Sparkles,
+  Scale,
+  Truck,
   MessageSquare,
   Building2,
   Users,
@@ -104,7 +104,6 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen bg-[#f6e6d3] text-stone-900 pb-20">
-      {/* Header Banner */}
       <section className="relative bg-gradient-to-br from-[#380c15] via-[#24060d] to-[#180307] text-white pt-16 pb-20 sm:py-24 border-b border-amber-500/25 overflow-hidden">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-0 left-10 w-96 h-96 bg-rose-950/40 rounded-full blur-[120px] pointer-events-none" />
@@ -135,12 +134,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 space-y-16">
-        
-        {/* Heritage Story & Three Generations of Pride */}
+
         <div className="bg-white border border-stone-200/90 rounded-3xl p-6 sm:p-12 shadow-sm space-y-10">
-          
+
           <div className="max-w-3xl mx-auto text-center space-y-3">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-[#801428] border border-amber-200 text-xs font-bold uppercase tracking-wider">
               <Sparkles className="w-3.5 h-3.5 text-[#801428]" />
@@ -206,7 +203,6 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Leadership & Desks Card (From Official Visiting Card) */}
         <div>
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="text-xs uppercase tracking-[0.25em] text-[#801428] font-bold block mb-2">
@@ -223,7 +219,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {leadership.map((person) => (
-              <div 
+              <div
                 key={person.name}
                 className="p-6 rounded-2xl bg-white border border-stone-200/90 hover:border-amber-400 transition-all shadow-xs hover:shadow-md flex flex-col justify-between"
               >
@@ -260,7 +256,6 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* 6 Core Pillars of Trust */}
         <div>
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="text-xs uppercase tracking-[0.25em] text-[#801428] font-bold block mb-2">
@@ -295,7 +290,6 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Our Specializations */}
         <div>
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="text-xs uppercase tracking-[0.25em] text-[#801428] font-bold block mb-2">
@@ -333,7 +327,6 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Showroom Location Banner in Ajmer */}
         <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#380c15] via-[#24060d] to-[#180307] text-white border border-amber-500/35 shadow-xl relative overflow-hidden">
           <div className="max-w-3xl space-y-5">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-[10.5px] uppercase tracking-wider font-semibold">
@@ -344,7 +337,7 @@ export default function AboutPage() {
             <h3 className="font-serif text-2xl sm:text-4xl font-normal text-white leading-tight">
               Visit Our Showroom & Atelier in Ajmer
             </h3>
-            
+
             <p className="text-amber-200 font-medium text-sm sm:text-base">
               Opp. Nagar Nigam, Hotel Ajmer Inn, Churi Bazar, Ajmer (Raj.)
             </p>

@@ -2,15 +2,15 @@
 
 import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
-import { 
-  Filter, 
-  Search, 
-  Heart, 
-  Eye, 
-  SlidersHorizontal, 
-  Sparkles, 
-  Check, 
-  ShieldCheck, 
+import {
+  Filter,
+  Search,
+  Heart,
+  Eye,
+  SlidersHorizontal,
+  Sparkles,
+  Check,
+  ShieldCheck,
   RotateCcw,
   ChevronDown,
   Award,
@@ -24,7 +24,6 @@ import { useWishlist } from "../../context/WishlistContext";
 export default function CollectionsPage() {
   const { toggleWishlist, isInWishlist, setSelectedProduct } = useWishlist();
 
-  // Filters state
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedMetal, setSelectedMetal] = useState("All");
   const [sortBy, setSortBy] = useState("featured");
@@ -37,7 +36,6 @@ export default function CollectionsPage() {
     "22K BIS Hallmarked Gold",
   ];
 
-  // Sync initial category from URL query string (e.g. /collections?category=Necklaces)
   useEffect(() => {
     if (typeof window === "undefined") return;
     const params = new URLSearchParams(window.location.search);
@@ -47,10 +45,8 @@ export default function CollectionsPage() {
     }
   }, []);
 
-  // Filtering & Sorting
   const filteredProducts = useMemo(() => {
     return PRODUCTS.filter((item) => {
-      // Category filter
       if (selectedCategory !== "All") {
         if (selectedCategory === "Matha Patti & Tikka") {
           if (!item.category.includes("Matha Patti") && !item.category.includes("Tikka")) return false;
@@ -58,11 +54,9 @@ export default function CollectionsPage() {
           return false;
         }
       }
-      // Metal filter
       if (selectedMetal !== "All" && !item.metal.toLowerCase().includes(selectedMetal.toLowerCase().split(" ")[0])) {
         return false;
       }
-      // Search Query
       if (searchQuery.trim() !== "") {
         const query = searchQuery.toLowerCase();
         const matchesName = item.name.toLowerCase().includes(query);
@@ -75,7 +69,7 @@ export default function CollectionsPage() {
       return true;
     }).sort((a, b) => {
       if (sortBy === "rating") return b.rating - a.rating;
-      return 0; // featured default
+      return 0;
     });
   }, [selectedCategory, selectedMetal, sortBy, searchQuery]);
 
@@ -88,15 +82,12 @@ export default function CollectionsPage() {
 
   return (
     <div className="min-h-screen bg-[#f6e6d3] text-stone-900 pb-20">
-      {/* Royal Velvet Maroon Header Banner */}
       <section className="relative bg-gradient-to-br from-[#380c15] via-[#24060d] to-[#180307] text-white pt-14 pb-16 sm:py-20 border-b border-amber-500/25 overflow-hidden">
-        {/* Ambient Filigree Lighting & Watermark */}
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute bottom-0 left-10 w-96 h-96 bg-rose-950/40 rounded-full blur-[120px] pointer-events-none" />
         <Gem className="absolute -right-10 -bottom-10 w-72 h-72 text-amber-500/5 pointer-events-none rotate-12" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          {/* Top Gold Pill */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-[11px] uppercase tracking-[0.25em] font-semibold mb-4 shadow-xs animate-float">
             <Sparkles className="w-3.5 h-3.5 text-amber-300 animate-pulse" />
             <span>The Vault &bull; India</span>
@@ -113,7 +104,6 @@ export default function CollectionsPage() {
             Every creation is individually handcrafted in our atelier featuring traditional Rajasthani Meenakari, antique Kundan-Polki artistry, and 100% BIS 916 hallmarked pure 22K gold.
           </p>
 
-          {/* Quick Perks Strip */}
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs text-amber-200/90 font-light">
             <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 border border-amber-400/15 backdrop-blur-xs">
               <ShieldCheck className="w-4 h-4 text-amber-300" />
@@ -132,10 +122,8 @@ export default function CollectionsPage() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 relative z-20">
-        {/* Luxury Filter Controls Bar */}
         <div className="bg-white border border-stone-200/90 rounded-2xl p-4 sm:p-6 mb-8 shadow-md">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
-            {/* Category Quick Pills */}
             <div className="flex flex-wrap items-center gap-2 w-full lg:w-auto">
               {categories.map((cat) => (
                 <button
@@ -152,7 +140,6 @@ export default function CollectionsPage() {
               ))}
             </div>
 
-            {/* Search Input with Gold Accents */}
             <div className="relative w-full lg:w-72">
               <input
                 type="text"
@@ -164,7 +151,6 @@ export default function CollectionsPage() {
               <Search className="w-4 h-4 text-stone-400 absolute left-3 top-1/2 -translate-y-1/2" />
             </div>
 
-            {/* Sort & Filter Dropdown Toggle */}
             <div className="flex items-center gap-3 w-full lg:w-auto justify-end">
               <div className="flex items-center gap-2 text-xs">
                 <span className="text-stone-500 hidden sm:inline font-medium">Sort:</span>
@@ -178,7 +164,6 @@ export default function CollectionsPage() {
                 </select>
               </div>
 
-              {/* Mobile Filter Button */}
               <button
                 onClick={() => setShowMobileFilters(!showMobileFilters)}
                 className="lg:hidden p-2.5 rounded-xl bg-stone-50 border border-stone-200 text-stone-700 hover:text-stone-950 flex items-center gap-1.5 text-xs font-semibold cursor-pointer"
@@ -189,7 +174,6 @@ export default function CollectionsPage() {
             </div>
           </div>
 
-          {/* Secondary Filter Dropdown (Metals & Reset) */}
           <div className={`mt-4 pt-4 border-t border-stone-100 flex flex-wrap items-center justify-between gap-4 ${showMobileFilters ? "block" : "hidden lg:flex"}`}>
             <div className="flex flex-wrap items-center gap-2">
               <span className="text-xs text-stone-500 mr-2 flex items-center gap-1 font-medium">
@@ -225,7 +209,6 @@ export default function CollectionsPage() {
           </div>
         </div>
 
-        {/* Product Grid */}
         {filteredProducts.length === 0 ? (
           <div className="text-center py-20 bg-white border border-stone-200 rounded-3xl p-8 shadow-sm">
             <Sparkles className="w-12 h-12 text-amber-600 mx-auto mb-4 animate-pulse" />
@@ -249,20 +232,17 @@ export default function CollectionsPage() {
                   key={product.id}
                   className="group rounded-2xl bg-white border border-stone-200 hover:border-amber-400/60 overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
                 >
-                  {/* Card Image Container */}
                   <div className="relative aspect-square overflow-hidden bg-stone-100">
                     <img
                       src={product.image}
                       alt={product.name}
                       className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-500 ease-out"
                     />
-                    
-                    {/* Royal Velvet Maroon Badge */}
+
                     <span className="absolute top-3 left-3 bg-gradient-to-r from-[#380c15] to-[#4d101d] text-amber-200 border border-amber-400/30 text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full shadow-md z-10">
                       {product.tag}
                     </span>
 
-                    {/* Quick View Hover Action */}
                     <div className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-[#180307]/90 via-[#24060d]/60 to-transparent flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                       <button
                         onClick={() => setSelectedProduct(product)}
@@ -274,10 +254,8 @@ export default function CollectionsPage() {
                     </div>
                   </div>
 
-                  {/* Card Content */}
                   <div className="p-5 flex-1 flex flex-col justify-between">
                     <div>
-                      {/* Category & SubCategory Row */}
                       <div className="flex items-center justify-between gap-2 text-[10.5px] uppercase tracking-wider mb-1.5">
                         <span className="font-bold text-[#801428] tracking-widest">{product.category}</span>
                         <span className="text-stone-400 font-medium truncate max-w-[140px]">
@@ -285,7 +263,6 @@ export default function CollectionsPage() {
                         </span>
                       </div>
 
-                      {/* Product Name */}
                       <h3
                         onClick={() => setSelectedProduct(product)}
                         className="font-serif text-base font-bold text-stone-900 hover:text-[#801428] cursor-pointer transition-colors line-clamp-1 mb-1.5"
@@ -293,7 +270,6 @@ export default function CollectionsPage() {
                         {product.name}
                       </h3>
 
-                      {/* Weight / Specification Badge */}
                       <div className="flex flex-wrap items-center gap-1.5 mb-2.5">
                         {product.grossWeight ? (
                           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-amber-50 border border-amber-200/80 text-[10px] font-semibold text-amber-900 tracking-tight">
@@ -317,7 +293,6 @@ export default function CollectionsPage() {
                         )}
                       </div>
 
-                      {/* Description */}
                       <p className="text-xs text-stone-500 line-clamp-2 mb-3 font-light leading-relaxed">
                         {product.description}
                       </p>
@@ -355,10 +330,9 @@ export default function CollectionsPage() {
           </div>
         )}
 
-        {/* Certificate Guarantee Callout (Royal Maroon & Champagne Gold) */}
         <div className="mt-20 p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#380c15] via-[#24060d] to-[#180307] border border-amber-500/35 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-80 h-80 bg-amber-500/10 rounded-full blur-[90px] pointer-events-none" />
-          
+
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5 relative z-10">
             <span className="p-4 rounded-2xl bg-amber-400/15 border border-amber-400/30 text-amber-300 shrink-0 shadow-md">
               <ShieldCheck className="w-8 h-8 text-amber-300 animate-pulse" />

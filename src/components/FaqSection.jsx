@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import { 
-  ChevronDown, 
-  Sparkles, 
-  ShieldCheck, 
-  CheckCircle2, 
+import {
+  ChevronDown,
+  Sparkles,
+  ShieldCheck,
+  CheckCircle2,
   HelpCircle,
   MessageSquare,
   Award
@@ -92,19 +92,19 @@ export const INDIAN_FAQS = [
   }
 ];
 
-export default function FaqSection({ 
-  title = "Frequently Asked Questions", 
-  subtitle = "Real Questions Answered for Our Patrons" 
+export default function FaqSection({
+  title = "Frequently Asked Questions",
+  subtitle = "Real Questions Answered for Our Patrons"
 }) {
   const [openFaq, setOpenFaq] = useState(0);
   const [activeCategory, setActiveCategory] = useState("All");
 
   const categories = [
-    "All", 
-    "Gold Purity & Hallmarking", 
-    "Bridal Customization", 
-    "Old Gold Exchange", 
-    "Net Gold Weight & Billing", 
+    "All",
+    "Gold Purity & Hallmarking",
+    "Bridal Customization",
+    "Old Gold Exchange",
+    "Net Gold Weight & Billing",
     "Family Shopping Comfort",
     "Insured Pan-India Delivery"
   ];
@@ -116,7 +116,6 @@ export default function FaqSection({
   return (
     <section className="py-20 sm:py-24 bg-[#faf8f5] border-t border-stone-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#faf2f4] border border-[#801428]/25 text-[#801428] text-[10.5px] uppercase tracking-[0.25em] font-medium mb-3">
             <HelpCircle className="w-3.5 h-3.5 text-[#801428]" />
@@ -131,7 +130,6 @@ export default function FaqSection({
           <div className="w-16 h-[1.5px] bg-[#801428] mx-auto mt-5" />
         </div>
 
-        {/* Category Pills */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
           {categories.map((cat) => (
             <button
@@ -148,7 +146,6 @@ export default function FaqSection({
           ))}
         </div>
 
-        {/* FAQ Cards Accordion */}
         <div className="space-y-4">
           {filteredFaqs.map((faq, index) => {
             const isOpen = openFaq === index;
@@ -159,13 +156,11 @@ export default function FaqSection({
                   isOpen ? "border-amber-400/80 ring-1 ring-amber-400/20" : "border-stone-200"
                 }`}
               >
-                {/* Accordion Trigger Header */}
                 <button
                   onClick={() => setOpenFaq(isOpen ? null : index)}
                   className="w-full p-5 sm:p-6 text-left flex items-start justify-between gap-4 cursor-pointer hover:bg-[#fcfaf7] transition-colors"
                 >
                   <div className="flex items-start gap-3.5 sm:gap-4 flex-1">
-                    {/* Indian Patron Monogram */}
                     <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-br from-[#380c15] to-[#25050c] text-amber-200 border border-amber-400/40 flex items-center justify-center font-serif text-sm sm:text-base font-bold shadow-xs shrink-0 mt-0.5 select-none">
                       {faq.person.name.replace(/^Mrs\.\s*/i, '').replace(/^Dr\.\s*/i, '').trim().charAt(0).toUpperCase()}
                     </div>
@@ -196,7 +191,6 @@ export default function FaqSection({
                   </div>
                 </button>
 
-                {/* Expanded Answer with Pure Text & Atelier Assurance (No Stock Photos) */}
                 {isOpen && (
                   <div className="px-5 sm:px-6 pb-6 pt-4 border-t border-stone-100 bg-[#fdfbf8]">
                     <div className="space-y-3.5">
@@ -231,7 +225,6 @@ export default function FaqSection({
           })}
         </div>
 
-        {/* Direct Helpline Prompt */}
         <div className="mt-12 p-6 rounded-2xl bg-white border border-stone-200 text-center shadow-xs">
           <p className="text-xs sm:text-sm text-stone-700 font-light">
             Have a custom bridal or gemstone query of your own? Our Senior Gemologists are available for direct conversation.
