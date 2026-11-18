@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Inquiries counter: allows generating sequential Lead IDs (e.g. LSGJ0001, LSGJ0002)
+    match /counters/{counterId} {
+      allow read, write: if true;
+    }
+    
+    // Contact inquiries submitted by website visitors
+    match /contact_inquiries/{inquiryId} {
+      allow read, write: if true;
+    }
+    
+    // Default rule for all other collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
