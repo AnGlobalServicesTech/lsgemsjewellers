@@ -515,7 +515,7 @@ export const PRODUCTS = [
     certification: "BIS 916 Hallmarked Pure Gold"
   },
   {
-    id: "lsg-kada-greek-key-diamond-pair",
+    id: "lsg-kada-greek-key-pair",
     modelCode: "SOVEREIGN-KADA / GREEK-KEY",
     name: "The Sovereign Greek-Key Designer 22K Gold Kada Pair",
     category: "Bracelets",
@@ -526,15 +526,15 @@ export const PRODUCTS = [
     tag: "Sovereign Luxe",
     rating: 5.0,
     reviewsCount: 38,
-    image: "/images/products/kada-greek-key-diamond-pair.jpg",
+    image: "/images/products/kada-greek-key-pair.jpg",
     gallery: [
-      "/images/products/kada-greek-key-diamond-pair.jpg"
+      "/images/products/kada-greek-key-pair.jpg"
     ],
     description: "As featured in our Sovereign Luxe 2026 campaign: A distinguished pair of solid 22K hallmarked gold designer kadas blending Greco-Roman architectural aesthetics with modern Italian goldsmithing. Displays black enamel Greek-key meander relief, precision mirror-faceted gold rails, and square floral rosette junction blocks with satin-brushed gold contours.",
     certification: "BIS 916 Hallmarked Pure Gold"
   },
   {
-    id: "lsg-kada-jaali-solitaire-enamel-pair",
+    id: "lsg-kada-jaali-enamel-pair",
     modelCode: "HERITAGE-KADA / JAALI-GOLD",
     name: "The Royal Jaali & Heritage Enamel Temple Gold Kada Pair",
     category: "Bracelets",
@@ -545,9 +545,9 @@ export const PRODUCTS = [
     tag: "Heritage Masterpiece",
     rating: 5.0,
     reviewsCount: 44,
-    image: "/images/products/kada-jaali-solitaire-enamel-pair.jpg",
+    image: "/images/products/kada-jaali-enamel-pair.jpg",
     gallery: [
-      "/images/products/kada-jaali-solitaire-enamel-pair.jpg"
+      "/images/products/kada-jaali-enamel-pair.jpg"
     ],
     description: "As featured in our Heritage Masterpiece campaign: An imperial pair of broad 22K hallmarked gold architectural temple kadas. Engineered with alternating rectangular articulated segments showcasing bezel-set sculpted gold medallions, intricate heritage jaali filigree, multi-colored pastel enamel mosaic patterns, and high-relief chiseled floral rosettes.",
     certification: "BIS 916 Hallmarked Pure Gold"
@@ -610,7 +610,7 @@ export const PRODUCTS = [
     certification: "BIS 916 Hallmarked Pure Gold"
   },
   {
-    id: "lsg-kada-princess-solitaire-rhodium-pair",
+    id: "lsg-kada-geometric-rhodium-pair",
     modelCode: "HERITAGE-KADA / ROYAL-RHODIUM",
     name: "The Imperial Geometric & Frosted Rhodium 22K Gold Kada Pair",
     category: "Bracelets",
@@ -621,9 +621,9 @@ export const PRODUCTS = [
     tag: "Haute Couture",
     rating: 5.0,
     reviewsCount: 42,
-    image: "/images/products/kada-princess-solitaire-rhodium-pair.jpg",
+    image: "/images/products/kada-geometric-rhodium-pair.jpg",
     gallery: [
-      "/images/products/kada-princess-solitaire-rhodium-pair.jpg"
+      "/images/products/kada-geometric-rhodium-pair.jpg"
     ],
     description: "A majestic pair of 22K hallmarked gold haute joaillerie kadas. Centered with prominent square bezel-set gold center plaques framed in heavy 22K gold bezels, alternating with hexagonal frosted white rhodium and yellow gold contrast panels, laser-engraved jaali lattice textures, and delicate blush-pink floral Meenakari plaques.",
     certification: "BIS 916 Hallmarked Pure Gold"
@@ -982,6 +982,300 @@ export const PRODUCTS = [
     ],
     description: "Extraordinary 71.00-gram ultra-heavyweight 22K BIS 916 hallmarked solid gold Maharaja chain in a sovereign 24-inch length. Handcrafted with filigree lattice-jaali cylindrical barrels, cross-engraved circular rosette side links, and a bold lower crescent-dome medallion weave built for ceremonial grandeur.",
     certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-necklace-gajaraj-teardrop-jadau-68g",
+    modelCode: "TEMPLE-SUITE / 68.25G",
+    name: "The Gaja Rajwada Elephant & Floral Kundan Antique Necklace Set",
+    category: "Necklaces",
+    subCategory: "High Jewellery & Chokers",
+    grossWeight: "68.25 g",
+    netGoldWeight: "68.25 g",
+    carat: "Net Gold: 68.25g | 22K Antique Temple Gold | Matching Elephant Jhumkas",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Carved Elephant Gajaraj Motifs, Teardrop Jadeite Plaque, Polki Kundan Flower & Cabochon Rubies",
+    tag: "Royal Jadau",
+    rating: 5.0,
+    reviewsCount: 48,
+    image: "/images/products/necklace-gajaraj-teardrop-jadau-68g.jpg",
+    gallery: [
+      "/images/products/necklace-gajaraj-teardrop-jadau-68g.jpg"
+    ],
+    description: "Majestic 68.25-gram 22K BIS 916 hallmarked antique temple gold choker necklace suite with matching royal chandelier earrings. Features twin sculpted Gajaraj (elephant) motifs supporting an ornamental cylindrical barrel, suspending a teardrop moss-green gemstone plaque inlaid with an exquisite floral syndicate polki kundan bloom framed by radiant pink rubies and cascading melon-seed gold drops.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-necklace-padma-hexagon-kundan-65g",
+    modelCode: "JADAU-COLLAR / 65.50G",
+    name: "The Padma Hexagon Kundan & Antique Gold Collar Suite",
+    category: "Necklaces",
+    subCategory: "High Jewellery & Chokers",
+    grossWeight: "65.50 g",
+    netGoldWeight: "65.50 g",
+    carat: "Net Gold: 65.50g | 22K Antique Gold Hasli | Matching Hexagon Earrings",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Hexagonal Jadeite Plaque, Radiant Kundan Lotus Bloom, Teardrop Foliate Charms & Pink Rubies",
+    tag: "Masterpiece",
+    rating: 5.0,
+    reviewsCount: 42,
+    image: "/images/products/necklace-padma-hexagon-kundan-65g.jpg",
+    gallery: [
+      "/images/products/necklace-padma-hexagon-kundan-65g.jpg"
+    ],
+    description: "Regal 65.50-gram 22K BIS 916 hallmarked antique gold bridal hasli collar necklace and matching chandelier earrings. Centered around a commanding hexagonal deep-green gemstone plaque showcasing an eight-petal syndicate polki kundan lotus star accented with cabochon rubies, flanked by cascading foliate teardrop charms and a hand-braided gold torque collar.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-chain-nawabi-jaali-paisley-51g-22in",
+    modelCode: "ROYAL-NAWABI / 51.00G",
+    name: "The Royal Nawabi Floral Jaali & Paisley 22K Gold Chain (22\")",
+    category: "Necklaces",
+    subCategory: "Men's Solid Gold Chains",
+    grossWeight: "51.00 g",
+    netGoldWeight: "51.00 g",
+    carat: "Net Gold: 51.00g | Length: 22\" | Heavy 22K Solid Gold",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Floral Filigree Jaali Sleeves, Embossed Paisley Teardrop Beads & Dome Links",
+    tag: "Masterpiece",
+    rating: 5.0,
+    reviewsCount: 61,
+    image: "/images/products/chain-nawabi-jaali-paisley-51g-22in.jpg",
+    gallery: [
+      "/images/products/chain-nawabi-jaali-paisley-51g-22in.jpg"
+    ],
+    description: "Stately 51.00-gram heavyweight 22K BIS 916 hallmarked solid gold royal Nawabi neck chain in a classic 22-inch length. Crafted with intricate scrolling floral filigree jaali barrel sleeves alternating with multi-tier clusters of embossed paisley teardrop beads and sculpted dome links for royal distinction.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-necklace-mayur-kalka-antique-53g",
+    modelCode: "TEMPLE-SUITE / 53.85G",
+    name: "The Mayur Kalka Peacock & Floral Kundan Antique Necklace Set",
+    category: "Necklaces",
+    subCategory: "High Jewellery & Chokers",
+    grossWeight: "53.85 g",
+    netGoldWeight: "53.85 g",
+    carat: "Net Gold: 53.85g | 22K Antique Temple Gold | Matching Peacock Earrings",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Carved Mayur Peacocks, Oval Jadeite Plaque, Polki Kundan Rosette & Ruby Drops",
+    tag: "Royal Jadau",
+    rating: 5.0,
+    reviewsCount: 46,
+    image: "/images/products/necklace-mayur-kalka-antique-53g.jpg",
+    gallery: [
+      "/images/products/necklace-mayur-kalka-antique-53g.jpg"
+    ],
+    description: "Magnificent 53.85-gram 22K BIS 916 hallmarked antique temple gold necklace suite with matching peacock chandelier earrings. Sculpted with gracefully perched twin Mayur peacocks crowning an oval jadeite plaque inlaid with syndicate polki kundan floral rosettes, surrounded by articulate foliate drop motifs, cabochon rubies, and cascading gold melon beads.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-necklace-chand-gajaraj-basra-pearl-53g",
+    modelCode: "BRIDAL-HAAR / 53.85G",
+    name: "The Chandrika Gajaraj & Basra Seed Pearl Heirloom Haar Suite",
+    category: "Necklaces",
+    subCategory: "Bridal Heirloom & Rani Haar",
+    grossWeight: "53.85 g",
+    netGoldWeight: "53.85 g",
+    carat: "Net Gold: 53.85g | 5-Strand Basra Seed Pearls | Matching Chand Jhumkas",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "5-Strand Basra Pearls, Crescent Chand Motif, Sculpted Gajaraj Elephants & Polki Kundan",
+    tag: "Bridal Heirloom",
+    rating: 5.0,
+    reviewsCount: 53,
+    image: "/images/products/necklace-chand-gajaraj-basra-pearl-53g.jpg",
+    gallery: [
+      "/images/products/necklace-chand-gajaraj-basra-pearl-53g.jpg"
+    ],
+    description: "Exquisite 53.85-gram 22K BIS 916 hallmarked bridal heirloom haar featuring five cascading strands of hand-woven Basra seed pearls on either flank. Anchored by sculpted temple gold Gajaraj elephants perched upon crescent chand arches, centering an ornate polki kundan and teardrop jadeite medallion with ruby rimming and matching crescent earrings.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-necklace-gajendra-royal-pearl-haar-56g",
+    modelCode: "BRIDAL-HAAR / 56.50G",
+    name: "The Gajendra Jaali & Multi-Strand Pearl Bridal Rani Haar Suite",
+    category: "Necklaces",
+    subCategory: "Bridal Heirloom & Rani Haar",
+    grossWeight: "56.50 g",
+    netGoldWeight: "56.50 g",
+    carat: "Net Gold: 56.50g | 5-Strand Lustrous Pearls | Matching Floral Jhumkas",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "5-Strand Basra Pearls, Ornate Temple Elephants, Geometric Jaali Polki Plaque & Rubies",
+    tag: "Grand Heirloom",
+    rating: 5.0,
+    reviewsCount: 49,
+    image: "/images/products/necklace-gajendra-royal-pearl-haar-56g.jpg",
+    gallery: [
+      "/images/products/necklace-gajendra-royal-pearl-haar-56g.jpg"
+    ],
+    description: "Opulent 56.50-gram 22K BIS 916 hallmarked bridal rani haar suite draped with five delicate strands of cultured Basra pearls. Adorned with detailed hand-carved Gajaraj royal elephants along the collar leads into a grand geometric jaali syndicate polki kundan central bib, fringed with hand-hammered floral gold bell clusters and matching jhumkas.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-necklace-moti-floret-haar-62g",
+    modelCode: "JADAU-CHOKER / 62.80G",
+    name: "The Rajyashree Pearl-Halo & Floral Medallion Antique Choker Suite",
+    category: "Necklaces",
+    subCategory: "High Jewellery & Chokers",
+    grossWeight: "62.80 g",
+    netGoldWeight: "62.80 g",
+    carat: "Net Gold: 62.80g | 22K Antique Temple Gold | Matching Chandelier Jhumkas",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Concentric Pearl Halos, Ruby Florets, Floral Jaali Connectors & Gold Ghungroos",
+    tag: "Royal Jadau",
+    rating: 5.0,
+    reviewsCount: 52,
+    image: "/images/products/necklace-moti-floret-haar-62g.jpg",
+    gallery: [
+      "/images/products/necklace-moti-floret-haar-62g.jpg"
+    ],
+    description: "Regal 62.80-gram 22K BIS 916 hallmarked antique temple gold choker necklace suite with matching chandelier jhumkas. Displays an ornate double-tier collar of sculpted gold florets and green tourmaline step accents, suspending a series of concentric seed-pearl halo medallions centered with cabochon rubies and fringed by cascading gold drops.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-necklace-chand-meenakari-antique-56g",
+    modelCode: "TEMPLE-SUITE / 56.90G",
+    name: "The Chandramukhi Meenakari Chand & Elephant Antique Necklace Set",
+    category: "Necklaces",
+    subCategory: "High Jewellery & Chokers",
+    grossWeight: "56.90 g",
+    netGoldWeight: "56.90 g",
+    carat: "Net Gold: 56.90g | 22K Antique Temple Gold | Matching Meenakari Jhumkas",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Crescent Chand Medallion, Royal Elephants, Green & Crimson Meenakari & Gold Leaf Drops",
+    tag: "Royal Masterpiece",
+    rating: 5.0,
+    reviewsCount: 57,
+    image: "/images/products/necklace-chand-meenakari-antique-56g.jpg",
+    gallery: [
+      "/images/products/necklace-chand-meenakari-antique-56g.jpg"
+    ],
+    description: "Magnificent 56.90-gram 22K BIS 916 hallmarked antique temple gold bridal necklace suite with matching chandelier earrings. Accented with dual-strand sculpted gold bead collars, twin royal elephants supporting a crescent chand pendant inlaid with emerald-green and crimson-red meenakari enamel, bordered with delicate polki kundan floral florets and textured gold leaf tassels.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-kada-faceted-floret-finial-pair-53g",
+    modelCode: "ANTIQUE-KADA / 53.25G",
+    name: "The Maharaja Serrated Facet & Kundan Finial 22K Gold Kada Pair",
+    category: "Bracelets",
+    subCategory: "Designer Gold Kadas & Bangles",
+    grossWeight: "53.25 g",
+    netGoldWeight: "53.25 g",
+    carat: "Pair of 22K Antique Gold Kadas | Net Gold: 53.25g | Screw-Hinge Clasp",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Serrated Pyramid Mirror-Facets, Sculpted Bulbous Finials, Polki Kundan & Ruby Cabochons",
+    tag: "Masterpiece",
+    rating: 5.0,
+    reviewsCount: 44,
+    image: "/images/products/kada-faceted-floret-finial-pair-53g.jpg",
+    gallery: [
+      "/images/products/kada-faceted-floret-finial-pair-53g.jpg"
+    ],
+    description: "Stately 53.25-gram pair of 22K BIS 916 hallmarked solid antique gold statement kadas engineered with precision screw-hinge lock clasps. Features densely serrated multi-faceted pyramid gold discs along the full circumference, culminating in sculpted bulbous melon-cut finial heads encrusted with syndicate polki kundan and cabochon rubies.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-mangalsutra-kalash-tassel-drop-8g-18in",
+    modelCode: "MANGALSUTRA / 7.87G",
+    name: "The Soubhagya Kalash & Tassel 22K Gold Mangalsutra (18\")",
+    category: "Necklaces",
+    subCategory: "Auspicious Gold Mangalsutras",
+    grossWeight: "8.23 g",
+    netGoldWeight: "7.87 g",
+    carat: "Net Gold: 7.87g | Length: 18\" | 22K Solid Gold with Black Spinel Beads",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Sacred Black Spinel Beads, Sculpted Kalash Finial & Articulated Gold Tassels",
+    tag: "Auspicious Elegance",
+    rating: 5.0,
+    reviewsCount: 38,
+    image: "/images/products/mangalsutra-kalash-tassel-drop-8g-18in.jpg",
+    gallery: [
+      "/images/products/mangalsutra-kalash-tassel-drop-8g-18in.jpg"
+    ],
+    description: "Graceful 18-inch 22K BIS 916 hallmarked solid gold mangalsutra (7.87g net gold). Designed with alternating sacred black spinel beads and fluted gold cylinders leading to a chevron V-drop, anchored by an auspicious sculpted Kalash vessel pendant finished with fluid gold tassel beads.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-mangalsutra-fluted-droplet-6g-18in",
+    modelCode: "MANGALSUTRA / 6.07G",
+    name: "The Pavitra Fluted Droplet 22K Gold Mangalsutra (18\")",
+    category: "Necklaces",
+    subCategory: "Auspicious Gold Mangalsutras",
+    grossWeight: "6.29 g",
+    netGoldWeight: "6.07 g",
+    carat: "Net Gold: 6.07g | Length: 18\" | 22K Solid Gold with Black Spinel Beads",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Sacred Black Spinel Beads & Fluted Mirror-Faceted Gold Droplet Charm",
+    tag: "Daily Grace",
+    rating: 5.0,
+    reviewsCount: 41,
+    image: "/images/products/mangalsutra-fluted-droplet-6g-18in.jpg",
+    gallery: [
+      "/images/products/mangalsutra-fluted-droplet-6g-18in.jpg"
+    ],
+    description: "Sleek and timeless 18-inch 22K BIS 916 hallmarked solid gold mangalsutra (6.07g net gold). Strung with delicate sacred black spinel beads spaced along an Italian-style gold link chain, centered with a polished fluted droplet bead pendant designed for refined everyday grace.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-mangalsutra-filigree-paisley-station-6g-18in",
+    modelCode: "MANGALSUTRA / 6.05G",
+    name: "The Mangalya Filigree Paisley-Station 22K Gold Mangalsutra (18\")",
+    category: "Necklaces",
+    subCategory: "Auspicious Gold Mangalsutras",
+    grossWeight: "6.89 g",
+    netGoldWeight: "6.05 g",
+    carat: "Net Gold: 6.05g | Length: 18\" | 22K Solid Gold with Black Spinel Beads",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Sacred Black Spinel Beads, Pierced Paisley Stations & Tassel Bell Finial",
+    tag: "Auspicious Luxe",
+    rating: 5.0,
+    reviewsCount: 36,
+    image: "/images/products/mangalsutra-filigree-paisley-station-6g-18in.jpg",
+    gallery: [
+      "/images/products/mangalsutra-filigree-paisley-station-6g-18in.jpg"
+    ],
+    description: "Intricate 18-inch 22K BIS 916 hallmarked solid gold mangalsutra (6.05g net gold). Styled with continuous black spinel beading punctuated by pierced filigree paisley motif stations, culminating in a delicate V-yoke with a fluted bell pendant accented with black bead fringe.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-mangalsutra-kalash-pipe-tassel-10g-18in",
+    modelCode: "MANGALSUTRA / 10.20G",
+    name: "The Shringara Fluted Kalash & Pipe 22K Gold Mangalsutra (18\")",
+    category: "Necklaces",
+    subCategory: "Auspicious Gold Mangalsutras",
+    grossWeight: "10.34 g",
+    netGoldWeight: "10.20 g",
+    carat: "Net Gold: 10.20g | Length: 18\" | 22K Solid Gold with Black Spinel Beads",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Sacred Black Spinel Beads, Fluted Gold Pipes, Floral Finial & Tassel Drop",
+    tag: "Auspicious Elegance",
+    rating: 5.0,
+    reviewsCount: 45,
+    image: "/images/products/mangalsutra-kalash-pipe-tassel-10g-18in.jpg",
+    gallery: [
+      "/images/products/mangalsutra-kalash-pipe-tassel-10g-18in.jpg"
+    ],
+    description: "Substantial 18-inch 22K BIS 916 hallmarked solid gold mangalsutra (10.20g net gold). Meticulously strung with elongated fluted gold pipe beads and sacred black spinel beads leading down to a floral rosette finial and a fluted spherical pendant with triple gold tassel drops.",
+    certification: "BIS 916 Hallmarked Pure Gold"
+  },
+  {
+    id: "lsg-mangalsutra-triple-bell-tassel-8g-18in",
+    modelCode: "MANGALSUTRA / 8.45G",
+    name: "The Kalyani Triple-Bell Tassel 22K Gold Mangalsutra (18\")",
+    category: "Necklaces",
+    subCategory: "Auspicious Gold Mangalsutras",
+    grossWeight: "8.73 g",
+    netGoldWeight: "8.45 g",
+    carat: "Net Gold: 8.45g | Length: 18\" | 22K Solid Gold with Black Spinel Beads",
+    metal: "22K BIS 916 Hallmarked Gold",
+    gemstone: "Sacred Black Spinel Beads, Pierced Yoke & Triple Ghungroo Bell Tassels",
+    tag: "Auspicious Luxe",
+    rating: 5.0,
+    reviewsCount: 42,
+    image: "/images/products/mangalsutra-triple-bell-tassel-8g-18in.jpg",
+    gallery: [
+      "/images/products/mangalsutra-triple-bell-tassel-8g-18in.jpg"
+    ],
+    description: "Ornate 18-inch 22K BIS 916 hallmarked solid gold mangalsutra (8.45g net gold). Features a lustrous gold link chain converging into a black-beaded V-drop, embellished with multi-tier triple floral gold bell tassels fringed with dangling black spinel beads for auspicious celebration.",
+    certification: "BIS 916 Hallmarked Pure Gold"
   }
 ];
 
@@ -989,7 +1283,7 @@ export const CATEGORIES = [
   {
     id: "necklaces",
     name: "Haute Necklaces & Chokers",
-    count: "16 Masterpieces",
+    count: "29 Masterpieces",
     image: "/images/categories/category-necklaces.jpg",
     href: "/collections?category=Necklaces",
     description: "Cascading antique polki sets, royal meenakari haars, and bridal heirloom rani haars."
@@ -1013,7 +1307,7 @@ export const CATEGORIES = [
   {
     id: "kadas",
     name: "Designer Kadas & Bangles",
-    count: "17 Sovereign Styles",
+    count: "18 Sovereign Styles",
     image: "/images/categories/category-kadas.jpg",
     href: "/collections?category=Bracelets",
     description: "Greek-key carved gold kadas, temple jaali heritage bangles, and Italian-cut solid 22K gold pairs."

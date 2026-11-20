@@ -86,7 +86,7 @@ export default function Footer() {
                     LS GEMS & JEWELLERS
                   </span>
                   <span className="text-[10px] uppercase tracking-[0.22em] text-amber-300/80 font-medium">
-                    A Unit By Kulthiya &bull; 40 Years of Heritage
+                    Direct Showroom &bull; 40 Years of Heritage
                   </span>
                 </div>
               </div>

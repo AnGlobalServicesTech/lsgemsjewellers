@@ -365,7 +365,7 @@ export default function ContactPage() {
                 </h4>
               </div>
               <p className="text-xs text-stone-300 leading-relaxed font-light">
-                <strong>L.S Gems &amp; Jewellers (A Unit By Kulthiya)</strong> is an independent single-destination jewellery house located in Churi Bazar, Ajmer. <strong>We do not provide or authorize any franchise.</strong> Every creation is 100% BIS 916 hallmarked gold with 6-digit HUID verification, dispatched with fully insured pan-India delivery.
+                <strong>L.S Gems &amp; Jewellers</strong> is an independent single-destination jewellery house located in Churi Bazar, Ajmer. <strong>We do not provide or authorize any franchise.</strong> Every creation is 100% BIS 916 hallmarked gold with 6-digit HUID verification, dispatched with fully insured pan-India delivery.
               </p>
               <div className="pt-2 border-t border-amber-900/40 flex items-center gap-2 text-[11px] text-amber-200 font-medium">
                 <Truck className="w-3.5 h-3.5 text-amber-300 shrink-0" />
@@ -379,7 +379,7 @@ export default function ContactPage() {
               <div className="flex items-center justify-between pb-3 border-b border-stone-100">
                 <div>
                   <h3 className="font-serif text-lg font-bold text-stone-900">Showroom & Atelier</h3>
-                  <p className="text-xs text-stone-500">A Unit By Kulthiya</p>
+                  <p className="text-xs text-stone-500">Ajmer, Rajasthan</p>
                 </div>
                 <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-amber-100 text-[#801428] border border-amber-200">
                   Ajmer (Raj.)

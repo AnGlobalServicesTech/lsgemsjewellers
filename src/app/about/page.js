@@ -110,7 +110,7 @@ export default function AboutPage() {
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-[11px] uppercase tracking-[0.25em] font-semibold mb-4 shadow-xs">
-            <span>A Unit By Kulthiya</span>
+            <span>40 Years of Heritage</span>
             <span className="text-amber-500/60">•</span>
             <span>Churi Bazar, Ajmer</span>
           </div>
@@ -206,7 +206,7 @@ export default function AboutPage() {
         <div>
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="text-xs uppercase tracking-[0.25em] text-[#801428] font-bold block mb-2">
-              A Unit By Kulthiya
+              Ajmer's Premier Heritage House
             </span>
             <h2 className="font-serif text-2xl sm:text-4xl font-bold text-stone-900">
               Leadership & Direct Desks

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import {
   Sparkles,
@@ -44,13 +44,56 @@ export default function Hero() {
 
   const filterTabs = ["All", "Bestsellers", "Bridal", "Rare Gems"];
 
-  const filteredProducts = PRODUCTS.filter((item) => {
-    if (activeTab === "All") return true;
-    if (activeTab === "Bestsellers") return item.tag.includes("Sovereign") || item.tag.includes("Masterpiece") || item.rating >= 5.0;
-    if (activeTab === "Bridal") return item.tag.includes("Bridal") || item.subCategory.includes("Bridal") || item.subCategory.includes("Heirloom") || item.category === "Matha Patti & Tikka";
-    if (activeTab === "Rare Gems") return item.tag.includes("Masterpiece") || item.tag.includes("Royal") || item.gemstone.includes("Emerald") || item.gemstone.includes("Polki");
-    return true;
-  });
+  const FEATURED_TAB_MAP = useMemo(() => ({
+    "All": [
+      "lsg-necklace-chand-gajaraj-basra-pearl-53g",
+      "lsg-chain-miami-cuban-41g-21in",
+      "lsg-kada-faceted-floret-finial-pair-53g",
+      "lsg-hathphool-sp21-839",
+      "lsg-mangalsutra-kalash-tassel-drop-8g-18in",
+      "lsg-bracelet-heavy-lion-chain-30g",
+      "lsg-mathapatti-sp63-1178",
+      "lsg-necklace-gajaraj-teardrop-jadau-68g"
+    ],
+    "Bestsellers": [
+      "lsg-chain-miami-cuban-41g-21in",
+      "lsg-kada-faceted-floret-finial-pair-53g",
+      "lsg-bracelet-heavy-lion-chain-30g",
+      "lsg-necklace-gajaraj-teardrop-jadau-68g",
+      "lsg-chain-maharaja-medallion-71g-24in",
+      "lsg-mangalsutra-kalash-tassel-drop-8g-18in",
+      "lsg-hathphool-sp21-839",
+      "lsg-necklace-chand-gajaraj-basra-pearl-53g"
+    ],
+    "Bridal": [
+      "lsg-necklace-chand-gajaraj-basra-pearl-53g",
+      "lsg-mathapatti-sp63-1178",
+      "lsg-hathphool-sp21-839",
+      "lsg-necklace-gajaraj-teardrop-jadau-68g",
+      "lsg-kada-faceted-floret-finial-pair-53g",
+      "lsg-mangalsutra-kalash-tassel-drop-8g-18in",
+      "lsg-necklace-padma-hexagon-kundan-65g",
+      "lsg-necklace-gajendra-royal-pearl-haar-56g"
+    ],
+    "Rare Gems": [
+      "lsg-necklace-gajaraj-teardrop-jadau-68g",
+      "lsg-necklace-padma-hexagon-kundan-65g",
+      "lsg-necklace-chand-meenakari-antique-56g",
+      "lsg-necklace-moti-floret-haar-62g",
+      "lsg-necklace-mayur-kalka-antique-53g",
+      "lsg-kada-faceted-floret-finial-pair-53g",
+      "lsg-hathphool-sp21-839",
+      "lsg-mathapatti-sp63-1178"
+    ]
+  }), []);
+
+  const filteredProducts = useMemo(() => {
+    const curatedIds = FEATURED_TAB_MAP[activeTab] || FEATURED_TAB_MAP["All"];
+    const curated = curatedIds.map((id) => PRODUCTS.find((p) => p.id === id)).filter(Boolean);
+    const curatedSet = new Set(curatedIds);
+    const remaining = PRODUCTS.filter((p) => !curatedSet.has(p.id));
+    return [...curated, ...remaining];
+  }, [activeTab, FEATURED_TAB_MAP]);
 
   const goldKaratOptions = [
     {
@@ -284,9 +327,9 @@ export default function Hero() {
         </div>
       </div>
 
-      <section className="py-20 bg-[#f6e6d3] border-b border-[#ebd7c2]">
+      <section className="py-24 sm:py-28 lg:py-32 bg-[#f6e6d3] border-b border-[#ebd7c2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-xs uppercase tracking-[0.25em] text-[#801428] font-bold block mb-2">
               Curated Universes
             </span>
@@ -332,12 +375,12 @@ export default function Hero() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 bg-gradient-to-b from-[#380c15] via-[#2a070f] to-[#1c0409] text-stone-200 border-b border-amber-500/25 relative overflow-hidden">
+      <section className="py-24 sm:py-32 lg:py-36 bg-gradient-to-b from-[#380c15] via-[#2a070f] to-[#1c0409] text-stone-200 border-b border-amber-500/25 relative overflow-hidden">
         <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-amber-500/5 rounded-full blur-[140px] pointer-events-none" />
         <div className="absolute bottom-0 left-10 w-[350px] h-[350px] bg-rose-950/20 rounded-full blur-[120px] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-4">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-14 gap-4">
             <div>
               <span className="text-xs uppercase tracking-[0.25em] text-amber-300 font-bold block mb-2">
                 Editorial Lookbook 2026
@@ -410,9 +453,9 @@ export default function Hero() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 bg-[#f6e6d3] border-b border-[#ebd7c2] relative">
+      <section className="py-24 sm:py-32 lg:py-36 bg-[#f6e6d3] border-b border-[#ebd7c2] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
             <div>
               <span className="text-xs uppercase tracking-[0.25em] text-[#801428] font-bold block mb-1.5">
                 The LS Gems and Jewellers Vault
@@ -529,7 +572,7 @@ export default function Hero() {
             })}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-16 sm:mt-20">
             <Link
               href="/collections"
               className="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-[#801428]/70 hover:border-[#801428] text-[#801428] hover:bg-[#380c15] hover:text-amber-200 text-xs font-bold uppercase tracking-widest transition-all shadow-sm gold-gleam-btn"
@@ -541,9 +584,9 @@ export default function Hero() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#f6e6d3] border-y border-[#ebd7c2] relative">
+      <section className="py-28 sm:py-36 lg:py-44 bg-[#f6e6d3] border-b border-[#ebd7c2] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-14">
+          <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
             <span className="text-xs uppercase tracking-[0.25em] text-[#801428] font-bold block mb-2">
               Bullion &amp; Hallmarking Mastery
             </span>
@@ -642,9 +685,9 @@ export default function Hero() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#f6e6d3] border-t border-[#ebd7c2]">
+      <section className="py-28 sm:py-36 lg:py-44 bg-[#f6e6d3] border-b border-[#ebd7c2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-20 sm:mb-24">
             <span className="text-xs uppercase tracking-[0.25em] text-[#801428] font-bold block mb-2">
               Patrons of Distinction
             </span>
@@ -693,7 +736,7 @@ export default function Hero() {
         </div>
       </section>
 
-      <section className="py-20 sm:py-24 bg-[#f6e6d3] border-t border-[#ebd7c2] relative overflow-hidden">
+      <section className="py-28 sm:py-36 lg:py-44 bg-[#f6e6d3] relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-3xl bg-gradient-to-br from-[#380c15] via-[#24060d] to-[#180307] border border-amber-500/35 p-7 sm:p-10 lg:p-12 shadow-2xl overflow-hidden">
             <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px] pointer-events-none" />
@@ -787,7 +830,7 @@ export default function Hero() {
                   <div className="absolute inset-x-0 bottom-0 p-3.5 bg-gradient-to-t from-[#180307]/95 via-[#180307]/70 to-transparent flex flex-col justify-end text-white z-10">
                     <div className="flex items-center justify-between text-xs font-serif mb-0.5">
                       <span className="font-semibold text-amber-200">L.S Gems & Jewellers</span>
-                      <span className="text-stone-300 text-[10.5px]">A Unit By Kulthiya</span>
+                      <span className="text-stone-300 text-[10.5px]">Direct Showroom, Ajmer</span>
                     </div>
                     <p className="text-[10.5px] text-stone-200 font-light leading-snug">
                       Opp. Nagar Nigam, Hotel Ajmer Inn, Churi Bazar, Ajmer (Raj.)
