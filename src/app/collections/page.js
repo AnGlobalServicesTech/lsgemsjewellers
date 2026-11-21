@@ -30,7 +30,16 @@ export default function CollectionsPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [showMobileFilters, setShowMobileFilters] = useState(false);
 
-  const categories = ["All", "Necklaces", "Bracelets", "Matha Patti & Tikka"];
+  const categories = [
+    "All",
+    "Haar & Chokers",
+    "Mangalsutras",
+    "Gold Chains",
+    "Kadas & Bangles",
+    "Men's Bracelets",
+    "Hathphool",
+    "Matha Patti & Tikka"
+  ];
   const metals = [
     "All",
     "22K BIS Hallmarked Gold",
@@ -40,16 +49,44 @@ export default function CollectionsPage() {
     if (typeof window === "undefined") return;
     const params = new URLSearchParams(window.location.search);
     const catParam = params.get("category");
-    if (catParam && categories.includes(catParam)) {
-      setSelectedCategory(catParam);
+    if (catParam) {
+      if (categories.includes(catParam)) {
+        setSelectedCategory(catParam);
+      } else if (catParam.toLowerCase().includes("necklace") || catParam.toLowerCase().includes("haar")) {
+        setSelectedCategory("Haar & Chokers");
+      } else if (catParam.toLowerCase().includes("mangalsutra")) {
+        setSelectedCategory("Mangalsutras");
+      } else if (catParam.toLowerCase().includes("chain")) {
+        setSelectedCategory("Gold Chains");
+      } else if (catParam.toLowerCase().includes("kada") || catParam.toLowerCase().includes("bangle")) {
+        setSelectedCategory("Kadas & Bangles");
+      } else if (catParam.toLowerCase().includes("hathphool")) {
+        setSelectedCategory("Hathphool");
+      } else if (catParam.toLowerCase().includes("matha") || catParam.toLowerCase().includes("tikka")) {
+        setSelectedCategory("Matha Patti & Tikka");
+      } else if (catParam.toLowerCase().includes("bracelet")) {
+        setSelectedCategory("Men's Bracelets");
+      }
     }
   }, []);
 
   const filteredProducts = useMemo(() => {
     return PRODUCTS.filter((item) => {
       if (selectedCategory !== "All") {
-        if (selectedCategory === "Matha Patti & Tikka") {
-          if (!item.category.includes("Matha Patti") && !item.category.includes("Tikka")) return false;
+        if (selectedCategory === "Haar & Chokers") {
+          if (item.category !== "Haar & Chokers") return false;
+        } else if (selectedCategory === "Mangalsutras") {
+          if (item.category !== "Mangalsutras") return false;
+        } else if (selectedCategory === "Gold Chains") {
+          if (item.category !== "Gold Chains") return false;
+        } else if (selectedCategory === "Kadas & Bangles") {
+          if (item.category !== "Kadas & Bangles") return false;
+        } else if (selectedCategory === "Men's Bracelets") {
+          if (item.category !== "Men's Bracelets") return false;
+        } else if (selectedCategory === "Hathphool") {
+          if (item.category !== "Hathphool") return false;
+        } else if (selectedCategory === "Matha Patti & Tikka") {
+          if (item.category !== "Matha Patti & Tikka") return false;
         } else if (item.category !== selectedCategory) {
           return false;
         }
@@ -143,7 +180,7 @@ export default function CollectionsPage() {
             <div className="relative w-full lg:w-72">
               <input
                 type="text"
-                placeholder="Search Rani Haars, Polki, Matha Pattis, Kadas..."
+                placeholder="Search Rani Haars, Mangalsutras, Chains, Kadas, Hathphools..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full bg-stone-50 border border-stone-200 rounded-xl pl-9 pr-4 py-2.5 text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#801428] focus:bg-white shadow-xs transition-colors"
@@ -271,15 +308,9 @@ export default function CollectionsPage() {
                       </h3>
 
                       <div className="flex flex-wrap items-center gap-1.5 mb-2.5">
-                        {product.grossWeight ? (
+                        {product.netGoldWeight ? (
                           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-amber-50 border border-amber-200/80 text-[10px] font-semibold text-amber-900 tracking-tight">
-                            <span className="text-amber-700 font-normal">GW:</span> {product.grossWeight}
-                            {product.netGoldWeight && (
-                              <>
-                                <span className="text-amber-300">•</span>
-                                <span className="text-amber-700 font-normal">NW:</span> {product.netGoldWeight}
-                              </>
-                            )}
+                            <span className="text-amber-700 font-normal">NW:</span> {product.netGoldWeight}
                           </span>
                         ) : (
                           <span className="inline-flex items-center px-2 py-0.5 rounded-md bg-amber-50/70 border border-amber-200/60 text-[10px] font-medium text-amber-900 truncate max-w-[190px]">

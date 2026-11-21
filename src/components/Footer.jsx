@@ -107,33 +107,38 @@ export default function Footer() {
             </h5>
             <ul className="space-y-2 text-xs sm:text-[13px]">
               <li>
-                <Link href="/collections?category=Necklaces" className="text-stone-300 hover:text-amber-200 font-light tracking-wide transition-colors py-0.5 inline-block">
-                  Bridal Rani Haars & Necklaces
+                <Link href="/collections?category=Haar%20%26%20Chokers" className="text-stone-300 hover:text-amber-200 font-light tracking-wide transition-colors py-0.5 inline-block">
+                  Bridal Rani Haars & Chokers
                 </Link>
               </li>
               <li>
-                <Link href="/collections?category=Necklaces" className="text-stone-300 hover:text-amber-200 font-light tracking-wide transition-colors py-0.5 inline-block">
-                  Temple Chokers & Hasli Suites
+                <Link href="/collections?category=Mangalsutras" className="text-stone-300 hover:text-amber-200 font-light tracking-wide transition-colors py-0.5 inline-block">
+                  Auspicious 22K Gold Mangalsutras
+                </Link>
+              </li>
+              <li>
+                <Link href="/collections?category=Gold%20Chains" className="text-stone-300 hover:text-amber-200 font-light tracking-wide transition-colors py-0.5 inline-block">
+                  Men's Solid Gold Chains
+                </Link>
+              </li>
+              <li>
+                <Link href="/collections?category=Kadas%20%26%20Bangles" className="text-stone-300 hover:text-amber-200 font-light tracking-wide transition-colors py-0.5 inline-block">
+                  Designer Gold Kadas & Bangles
+                </Link>
+              </li>
+              <li>
+                <Link href="/collections?category=Men%27s%20Bracelets" className="text-stone-300 hover:text-amber-200 font-light tracking-wide transition-colors py-0.5 inline-block">
+                  Men's Sovereign Gold Bracelets
+                </Link>
+              </li>
+              <li>
+                <Link href="/collections?category=Hathphool" className="text-stone-300 hover:text-amber-200 font-light tracking-wide transition-colors py-0.5 inline-block">
+                  Imperial Bridal Hathphools
                 </Link>
               </li>
               <li>
                 <Link href="/collections?category=Matha%20Patti%20%26%20Tikka" className="text-stone-300 hover:text-amber-200 font-light tracking-wide transition-colors py-0.5 inline-block">
                   Bridal Matha Patti & Borla
-                </Link>
-              </li>
-              <li>
-                <Link href="/collections?category=Matha%20Patti%20%26%20Tikka" className="text-stone-300 hover:text-amber-200 font-light tracking-wide transition-colors py-0.5 inline-block">
-                  Royal Maang Tikkas
-                </Link>
-              </li>
-              <li>
-                <Link href="/collections?category=Bracelets" className="text-stone-300 hover:text-amber-200 font-light tracking-wide transition-colors py-0.5 inline-block">
-                  Bridal Jadau Hathphools
-                </Link>
-              </li>
-              <li>
-                <Link href="/collections?category=Bracelets" className="text-stone-300 hover:text-amber-200 font-light tracking-wide transition-colors py-0.5 inline-block">
-                  Designer Gold Kadas & Chains
                 </Link>
               </li>
             </ul>

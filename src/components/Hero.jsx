@@ -526,9 +526,9 @@ export default function Hero() {
                         {product.name}
                       </h3>
                       <div className="flex flex-wrap items-center gap-1.5 mb-2">
-                        {product.grossWeight ? (
+                        {product.netGoldWeight ? (
                           <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-amber-50 border border-amber-200/80 text-[9.5px] font-semibold text-amber-900">
-                            GW: {product.grossWeight}
+                            <span className="text-amber-700 font-normal">NW:</span> {product.netGoldWeight}
                           </span>
                         ) : (
                           <span className="inline-flex items-center px-1.5 py-0.5 rounded bg-amber-50/70 border border-amber-200/60 text-[9.5px] font-medium text-amber-900 truncate max-w-[170px]">

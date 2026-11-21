@@ -159,9 +159,11 @@ export default function ProductModal() {
               </div>
               <div>
                 <span className="text-stone-500 block text-[10px] uppercase tracking-wider mb-0.5 font-medium">
-                  {selectedProduct.grossWeight ? "Weight (Gross / Net)" : "Gold Specification"}
+                  {selectedProduct.netGoldWeight ? "Net Gold Weight (NW)" : "Gold Specification"}
                 </span>
-                <span className="font-semibold text-stone-900">{selectedProduct.carat}</span>
+                <span className="font-semibold text-stone-900">
+                  {selectedProduct.netGoldWeight ? `${selectedProduct.netGoldWeight} (Pure 22K Gold)` : selectedProduct.carat}
+                </span>
               </div>
               <div>
                 <span className="text-stone-500 block text-[10px] uppercase tracking-wider mb-0.5 font-medium">Metal Casting</span>
